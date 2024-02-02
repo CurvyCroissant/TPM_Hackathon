@@ -11,7 +11,7 @@
 </head>
 <body>
   <div class="navbar">
-    <img src="image/Variant3.svg" alt="">
+    <img src="{{Storage::url('images/Variant3.svg')}}" alt="">
     <div>
       <a href="">Admin Panel</a>
 
@@ -28,38 +28,38 @@
     <div class="content-bottom">
       <div class="fitur">
         <div class="search-fitur">
-          <img src="image/Vector (1).svg" alt="">
+          <img src="{{Storage::url('images/Vector (1).svg')}}" alt="">
           <input type="search" placeholder="Search Team">
         </div>
         <span class="sort-con">
           <div class="sort">
             <div>
-              <img src="image/basil_sort-outline.svg" alt="">
+              <img src="{{Storage::url('images/basil_sort-outline.svg')}}" alt="">
               <span>Sort</span>
             </div>
             <button onclick="choice()" id="sort-btn">
-              <img src="image/ep_arrow-down-bold.svg" alt="">
+              <img src="{{Storage::url('images/ep_arrow-down-bold.svg')}}" alt="">
             </button>
           </div>
           <div id="sort-choice">
             <hr>
             <div class="sortA ascending">
               <button>
-                <img src="image/icons8_alphabetical-sorting.svg" alt="">
+                <img src="{{Storage::url('images/icons8_alphabetical-sorting.svg')}}" alt="">
                 Ascending
               </button>
             </div>
             <hr>
             <div class="sortA descending">
               <button>
-                <img src="image/icons8_alphabetical-sorting-2.svg" alt="">
+                <img src="{{Storage::url('images/icons8_alphabetical-sorting-2.svg')}}" alt="">
                 Descending
               </button>
             </div>
             <hr>
             <div class="sortA free">
               <button>
-                <img src="image/ic_round-sort.svg" alt="">
+                <img src="{{Storage::url('images/ic_round-sort.svg')}}" alt="">
                 Free
               </button>
             </div>
@@ -90,20 +90,20 @@
           </span>
           <span class="info-right">
             <button class="view-data" onclick="viewData1()">
-              <img src="image/fluent-mdl2_view.svg" alt="">
+              <img src="{{Storage::url('images/fluent-mdl2_view.svg')}}" alt="">
               <span>View Data</span>
             </button>
             <button onclick="editData1()">
-              <img src="image/ep_edit.svg" alt="">
+              <img src="{{Storage::url('images/ep_edit.svg')}}" alt="">
               <span>Edit Data</span>
             </button>
             <button id="delete-btn">
-              <img src="image/Vector (2).svg" alt="">
+              <img src="{{Storage::url('images/Vector (2).svg')}}" alt="">
               <span>Delete Team</span>
             </button>
           </span>
         </div>
-        
+
         <div id="dashboard-view1">
           <hr>
           <div class="dash-top">
@@ -169,14 +169,14 @@
               <div class="file">
                 <h3>View CV</h3>
                 <button class="btn-file">
-                  <img src="image/material-symbols_download.svg" alt="">
+                  <img src="{{Storage::url('images/material-symbols_download.svg')}}" alt="">
                   <span>Download CV</span>
                 </button>
               </div>
               <div class="file">
                 <h3>View ID Card</h3>
                 <button class="btn-file">
-                  <img src="image/material-symbols_download.svg" alt="">
+                  <img src="{{Storage::url('images/material-symbols_download.svg')}}" alt="">
                   <span>Download ID Card</span>
                 </button>
               </div>
@@ -263,14 +263,14 @@
               <div class="file">
                 <h3>View CV</h3>
                 <button class="btn-file">
-                  <img src="image/material-symbols_download.svg" alt="">
+                  <img src="{{Storage::url('images/material-symbols_download.svg')}}" alt="">
                   <span>Download CV</span>
                 </button>
               </div>
               <div class="file">
                 <h3>View ID Card</h3>
                 <button class="btn-file">
-                  <img src="image/material-symbols_download.svg" alt="">
+                  <img src="{{Storage::url('images/material-symbols_download.svg')}}" alt="">
                   <span>Download ID Card</span>
                 </button>
               </div>
@@ -289,7 +289,7 @@
           </div>
         </div>
       </div>
-      
+
       <!-- start team info 2 -->
       <div class="team-info">
         <hr>
@@ -300,20 +300,20 @@
           </span>
           <span class="info-right">
             <button class="view-data" onclick="viewData2()">
-              <img src="image/fluent-mdl2_view.svg" alt="">
+              <img src="{{Storage::url('images/fluent-mdl2_view.svg')}}" alt="">
               <span>View Data</span>
             </button>
             <button onclick="editData2()">
-              <img src="image/ep_edit.svg" alt="">
+              <img src="{{Storage::url('images/ep_edit.svg')}}" alt="">
               <span>Edit Data</span>
             </button>
             <button id="delete-btn">
-              <img src="image/Vector (2).svg" alt="">
+              <img src="{{Storage::url('images/image/Vector (2).svg')}}" alt="">
               <span>Delete Team</span>
             </button>
           </span>
         </div>
-        
+
         <!-- start of view 2 -->
         <div id="dashboard-view2">
           <hr>
@@ -380,14 +380,14 @@
               <div class="file">
                 <h3>View CV</h3>
                 <button class="btn-file">
-                  <img src="image/material-symbols_download.svg" alt="">
+                  <img src="{{Storage::url('images/material-symbols_download.svg')}}" alt="">
                   <span>Download CV</span>
                 </button>
               </div>
               <div class="file">
                 <h3>View ID Card</h3>
                 <button class="btn-file">
-                  <img src="image/material-symbols_download.svg" alt="">
+                  <img src="{{Storage::url('images/material-symbols_download.svg')}}" alt="">
                   <span>Download ID Card</span>
                 </button>
               </div>
@@ -406,7 +406,7 @@
           </div>
         </div>
         <!-- end of view 2 -->
-        
+
         <!-- start of edit 2 -->
         <div id="dashboard-edit2">
           <hr>
@@ -476,14 +476,14 @@
               <div class="file">
                 <h3>View CV</h3>
                 <button class="btn-file">
-                  <img src="image/material-symbols_download.svg" alt="">
+                  <img src="{{Storage::url('images/material-symbols_download.svg')}}" alt="">
                   <span>Download CV</span>
                 </button>
               </div>
               <div class="file">
                 <h3>View ID Card</h3>
                 <button class="btn-file">
-                  <img src="image/material-symbols_download.svg" alt="">
+                  <img src="{{Storage::url('images/material-symbols_download.svg')}}" alt="">
                   <span>Download ID Card</span>
                 </button>
               </div>
@@ -515,20 +515,20 @@
           </span>
           <span class="info-right">
             <button class="view-data" onclick="viewData3()">
-              <img src="image/fluent-mdl2_view.svg" alt="">
+              <img src="{{Storage::url('images/fluent-mdl2_view.svg')}}" alt="">
               <span>View Data</span>
             </button>
             <button onclick="editData3()">
-              <img src="image/ep_edit.svg" alt="">
+              <img src="{{Storage::url('images/ep_edit.svg')}}" alt="">
               <span>Edit Data</span>
             </button>
             <button id="delete-btn">
-              <img src="image/Vector (2).svg" alt="">
+              <img src="{{Storage::url('images/Vector (2).svg')}}" alt="">
               <span>Delete Team</span>
             </button>
           </span>
         </div>
-        
+
         <!-- start of view 3 -->
         <div id="dashboard-view3">
           <hr>
@@ -595,14 +595,14 @@
               <div class="file">
                 <h3>View CV</h3>
                 <button class="btn-file">
-                  <img src="image/material-symbols_download.svg" alt="">
+                  <img src="{{Storage::url('images/material-symbols_download.svg')}}" alt="">
                   <span>Download CV</span>
                 </button>
               </div>
               <div class="file">
                 <h3>View ID Card</h3>
                 <button class="btn-file">
-                  <img src="image/material-symbols_download.svg" alt="">
+                  <img src="{{Storage::url('images/material-symbols_download.svg')}}" alt="">
                   <span>Download ID Card</span>
                 </button>
               </div>
@@ -621,7 +621,7 @@
           </div>
         </div>
         <!-- end of view 3 -->
-        
+
         <!-- start of edit 3 -->
         <div id="dashboard-edit3">
           <hr>
@@ -691,14 +691,14 @@
               <div class="file">
                 <h3>View CV</h3>
                 <button class="btn-file">
-                  <img src="image/material-symbols_download.svg" alt="">
+                  <img src="{{Storage::url('images/material-symbols_download.svg')}}" alt="">
                   <span>Download CV</span>
                 </button>
               </div>
               <div class="file">
                 <h3>View ID Card</h3>
                 <button class="btn-file">
-                  <img src="image/material-symbols_download.svg" alt="">
+                  <img src="{{Storage::url('images/material-symbols_download.svg')}}" alt="">
                   <span>Download ID Card</span>
                 </button>
               </div>
@@ -725,21 +725,21 @@
       <div class="bottom-top">
         <div class="bottom2">
           <h5>Organized by</h5>
-          <img src="image/image 31.svg" alt="">
+          <img src="{{Storage::url('images/image 31.svg')}}" alt="">
         </div>
         <div class="bottom2">
           <h5>Follow Us</h5>
           <div class="btn-contact">
-            <a href="https://www.instagram.com/technoscapebncc"><img src="image/Instgram.svg" alt=""></a>
-            <a href="https://twitter.com/bncc_binus"><img src="image/Twitter.svg" alt=""></a>
-            <a href="https://www.facebook.com/bina.nusantara.computer.club"><img src="image/Facebook.svg" alt=""></a>
-            <a href="https://www.linkedin.com/company/bina-nusantara-computer-club/mycompany/"><img src="image/Linkedin.svg" alt=""></a>
+            <a href="https://www.instagram.com/technoscapebncc"><img src="{{Storage::url('images/Instgram.svg')}}" alt=""></a>
+            <a href="https://twitter.com/bncc_binus"><img src="{{Storage::url('images/Twitter.svg')}}" alt=""></a>
+            <a href="https://www.facebook.com/bina.nusantara.computer.club"><img src="{{Storage::url('images/Facebook.svg')}}" alt=""></a>
+            <a href="https://www.linkedin.com/company/bina-nusantara-computer-club/mycompany/"><img src="{{Storage::url('images/Linkedin.svg')}}" alt=""></a>
           </div>
           <div>All Rights Reserved BNCC 2024 © Bina Nusantara Computer Club</div>
         </div>
         <div class="bottom2">
           <h5>Powered By</h5>
-          <img src="image/Frame 162680.svg" alt="">
+          <img src="{{Storage::url('images/Frame 162680.svg')}}" alt="">
         </div>
       </div>
       <div id="privacy">Privacy Policy 61.8 and Terms of Service</div>

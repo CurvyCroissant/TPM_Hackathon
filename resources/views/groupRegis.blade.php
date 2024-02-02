@@ -12,7 +12,7 @@
 <body>
   <div class="content">
     <div class="content1 left">
-      <img src="image/Logo.svg" alt="">
+      <img src="{{Storage::url('images/Logo.svg')}}" alt="">
       <h1>Get Yourself<br>Ready And Join<br>us</h1>
       <div id="login-info">
         <h4>Already have an account?</h4>

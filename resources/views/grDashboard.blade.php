@@ -11,14 +11,14 @@
 </head>
 <body>
   <div id="navbar">
-    <img src="image/Variant3.svg" alt="">
+    <img src="{{Storage::url('images/Variant3.svg')}}" alt="">
     <div class="nav-btn">
       <a href="#content">Dashboard</a>
       <a href="#timeline">Timeline</a>
 
       {{-- #1 LOGOUT BUTTON --}}
       <button>Log Out</button>
-      
+
     </div>
   </div>
   <div id="content">
@@ -93,14 +93,14 @@
           <div class="file">
             <h3>View CV</h3>
             <button class="btn-file">
-              <img src="image/material-symbols_download.svg" alt="">
+              <img src="{{Storage::url('images/material-symbols_download.svg')}}" alt="">
               <span>Download CV</span>
             </button>
           </div>
           <div class="file">
             <h3>View ID Card</h3>
             <button class="btn-file">
-              <img src="image/material-symbols_download.svg" alt="">
+              <img src="{{Storage::url('images/material-symbols_download.svg')}}" alt="">
               <span>Download ID Card</span>
             </button>
           </div>
@@ -125,7 +125,7 @@
       </div>
       <div class="time-bottom">
         <div class="timeline">
-          <img src="image/10.svg" alt="">
+          <img src="{{Storage::url('images/10.svg')}}" alt="">
           <div class="container left">
             <div class="content">
               <h2>1 January 2024</h2>
@@ -162,26 +162,26 @@
       <div class="bottom-top">
         <div class="bottom2">
           <h5>Organized by</h5>
-          <img src="image/image 31.svg" alt="">
+          <img src="{{Storage::url('images/image 31.svg')}}" alt="">
         </div>
         <div class="bottom2">
           <h5>Follow Us</h5>
           <div class="btn-contact">
-            <a href="https://www.instagram.com/technoscapebncc"><img src="image/Instgram.svg" alt=""></a>
-            <a href="https://twitter.com/bncc_binus"><img src="image/Twitter.svg" alt=""></a>
-            <a href="https://www.facebook.com/bina.nusantara.computer.club"><img src="image/Facebook.svg" alt=""></a>
-            <a href="https://www.linkedin.com/company/bina-nusantara-computer-club/mycompany/"><img src="image/Linkedin.svg" alt=""></a>
+            <a href="https://www.instagram.com/technoscapebncc"><img src="{{Storage::url('images/Instgram.svg')}}" alt=""></a>
+            <a href="https://twitter.com/bncc_binus"><img src="{{Storage::url('images/Twitter.svg')}}" alt=""></a>
+            <a href="https://www.facebook.com/bina.nusantara.computer.club"><img src="{{Storage::url('images/Facebook.svg')}}" alt=""></a>
+            <a href="https://www.linkedin.com/company/bina-nusantara-computer-club/mycompany/"><img src="{{Storage::url('images/Linkedin.svg')}}" alt=""></a>
           </div>
           <div>All Rights Reserved BNCC 2024 © Bina Nusantara Computer Club</div>
         </div>
         <div class="bottom2">
           <h5>Powered By</h5>
-          <img src="image/Frame 162680.svg" alt="">
+          <img src="{{Storage::url('images/Frame 162680.svg')}}" alt="">
         </div>
       </div>
       <div id="privacy">Privacy Policy 61.8 and Terms of Service</div>
     </div>
-    
+
   </div>
 </body>
 </html>
