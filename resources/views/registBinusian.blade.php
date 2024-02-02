@@ -18,7 +18,7 @@
 <body>
   <div class="content">
     <div class="regis-top">
-      <img src="image/Logo.svg" alt="">
+      <img src="{{Storage::url('images/Logo.svg')}}" alt="">
       <h2>Leader<br>Registration</h2>
     </div>
     <div class="regis-bottom">
@@ -63,14 +63,14 @@
           <div class="file-container">
             <input type="file" id="cv" name="cv" accept=".pdf, .doc, .docx" hidden oninput="validateCV()">
             <span id="text-cv">Upload CV</span>
-            <button type="button" class="file-btn" id="btn-cv">Select File <img src="image/Upload.svg" alt=""></button>
+            <button type="button" class="file-btn" id="btn-cv">Select File <img src="{{Storage::url('images/Upload.svg')}}" alt=""></button>
           </div>
           <!-- <p id="error-cv" class="error-message"></p> -->
           <h5>File format should be in PDF, JPG, JPEG or PNG</h5>
           <div class="file-container">
             <input type="file" id="flazzCard" name="flazzCard" accept=".png, .jpg, .jpeg" hidden oninput="validateFlazzCard()">
             <span id="text-flazz">Upload Flazz Card</span>
-            <button type="button" class="file-btn" id="btn-flazz">Select File <img src="image/Upload.svg" alt=""></button>
+            <button type="button" class="file-btn" id="btn-flazz">Select File <img src="{{Storage::url('images/Upload.svg')}}" alt=""></button>
           </div>
           <!-- <p id="error-flazz" class="error-message"></p> -->
           <h5>File format should be in PDF, JPG, JPEG or PNG</h5>
@@ -81,7 +81,7 @@
 
           {{-- #1 SUBMIT BUTTON --}}
           <button type="submit">Submit</button>
-          
+
         </div>
       </form>
     </div>
