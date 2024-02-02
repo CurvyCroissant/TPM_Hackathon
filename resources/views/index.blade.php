@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>hackathon</title>
+  <title>HACKATHON</title>
   <link rel="icon" type="image/png" href="image/meteor.png">
   <link rel="stylesheet" href="{{ asset('css/style.css') }}">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,7 +29,10 @@
       <a class="anchor-nav regular" href="#mentorJuries">Mentor & Jury</a>
       <a class="anchor-nav regular" href="#FAQ">FAQ</a>
       <a class="anchor-nav regular" href="#timeline">Timeline</a>
-      <button id="login-button">Login</button>
+
+      {{-- #1 LOGIN BUTTON --}}
+      <a href="{{ route('login') }}"><button id="login-button">Login</button></a>
+
     </div>
   </div>
 
@@ -70,7 +73,10 @@
           <p class="mission">Our Mission is to foster an environment of collaboration, learning and innovation</p>
         </div>
         <div class="button-about-con">
-          <button class="Register">Register</button>
+
+          {{-- #2 REGISTER BUTTON --}}
+          <a href="{{ route('registration') }}"><button class="Register">Register</button></a>
+
           <button id="Download">Download Guidebook</button>
         </div>
       </div>
@@ -612,7 +618,7 @@
     </div>
   </div>
 
-  <script src="script.js"></script>
+  <script src="{{ asset('js/script.js') }}></script>
 
 </body>
 </html>

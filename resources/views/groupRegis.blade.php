@@ -45,10 +45,13 @@
           </div>
         </div>
       </form>
+
+      {{-- #1 LOGIN BUTTON --}}
       <button id="btn-submit">Submit</button>
+
     </div>
   </div>
 
-  <script src="groupRegis.js" defer></script>
+  <script src="{{ asset('js/groupRegis.js') }} defer></script>
 </body>
 </html>

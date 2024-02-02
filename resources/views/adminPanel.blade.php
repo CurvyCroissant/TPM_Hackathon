@@ -14,7 +14,10 @@
     <img src="image/Variant3.svg" alt="">
     <div>
       <a href="">Admin Panel</a>
+
+      {{-- #1 LOGOUT BUTTON --}}
       <button>Log Out</button>
+
     </div>
   </div>
 
@@ -743,6 +746,6 @@
     </div>
   </div>
 
-  <script src="adminPanel.js"></script>
+  <script src="{{ asset('js/adminPanel.js') }}"></script>
 </body>
 </html>

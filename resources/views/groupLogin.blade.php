@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Group Registration</title>
+  <title>Group Log In</title>
   <link rel="stylesheet" href="{{ asset('css/groupLogin.css') }}">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -45,10 +45,13 @@
           </div>
         </div> -->
       </form>
-      <button id="btn-submit">Log In</button>
+
+      {{-- #1 LOGIN BUTTON --}}
+      <a href="{{ route('dashboard') }}"><button id="btn-submit">Log In</button></a>
+
     </div>
   </div>
 
-  <script src="groupLogin.js" defer></script>
+  <script src="{{ asset('js/groupLogin.js') }} defer></script>
 </body>
 </html>

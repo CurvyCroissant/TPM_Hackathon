@@ -15,7 +15,10 @@
     <div class="nav-btn">
       <a href="#content">Dashboard</a>
       <a href="#timeline">Timeline</a>
+
+      {{-- #1 LOGOUT BUTTON --}}
       <button>Log Out</button>
+      
     </div>
   </div>
   <div id="content">

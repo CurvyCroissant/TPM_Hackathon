@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="{{ asset('css/regis.css') }}">
+  <title>Registration (Binusian)</title>
+  <link rel="stylesheet" href="{{ asset('css/regisBinusian.css') }}">
   <link rel="icon" type="image/png" href="image/meteor.png">
   <!-- <link rel="stylesheet" href="style.css"> -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -78,12 +78,15 @@
           <!-- <label for="flazzCard">Upload Flazz Card (PNG, JPG):</label> -->
         </div>
         <div class="btn-submit">
+
+          {{-- #1 SUBMIT BUTTON --}}
           <button type="submit">Submit</button>
+          
         </div>
       </form>
     </div>
   </div>
 
-  <script src="registscript.js"></script>
+  <script src="{{ asset('js/registscript.js') }}></script>
 </body>
 </html>
