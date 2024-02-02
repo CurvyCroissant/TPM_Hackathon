@@ -15,11 +15,11 @@
   <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&family=Kumbh+Sans:wght@700&family=Poppins:wght@600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <img id="background" src="image/BACKGROUND (1).svg" alt="">
+  <img id="background" src="{{Storage::url('images/BACKGROUND (1).svg')}}" alt="">
 
   <div class="container-navbar" id="navbar">
     <div id="left-section-nav">
-      <img id="logo-nav" src="image/meteor.png" alt="">
+      <img id="logo-nav" src="{{Storage::url('images/meteor.png')}}" alt="">
       <h1 id="hack-nav">HACK<br>ATHON</h1>
     </div>
     <div id="right-section-nav">
@@ -37,12 +37,12 @@
   </div>
 
   <div id="content">
-    <img id="cloud-1" src="image/Image.png" alt="">
-    <img id="cloud-2" src="image/Image.png" alt="">
-    <img id="cloud-3" src="image/Image.png" alt="">
+    <img id="cloud-1" src="{{Storage::url('images/Image.png')}}" alt="">
+    <img id="cloud-2" src="{{Storage::url('images/Image.png')}}" alt="">
+    <img id="cloud-3" src="{{Storage::url('images/Image.png')}}" alt="">
     <div id="header">
       <div class="left-section-header">
-        <img id="logo-content" src="image/Logo.svg" alt="">
+        <img id="logo-content" src="{{Storage::url('images/Logo.svg')}}" alt="">
         <div class="heading">
           <p class="heading-1">Transform Your Ideas Into Reality</p>
           <br>
@@ -53,16 +53,16 @@
         </div>
       </div>
       <div class="right-section-header">
-        <img id="astronaut-content" src="image/7450345.svg" alt="">
+        <img id="astronaut-content" src="{{Storage::url('images/7450345.svg')}}" alt="">
       </div>
     </div>
 
     <div id="about">
-      <img id="border-about" src="image/Vector 1.png" alt="">
+      <img id="border-about" src="{{Storage::url('images/Vector 1.png')}}" alt="">
       <div class="left-section-about">
         <div class="info">
           <p class="title">Welcome To</p>
-          <img id="logo-info" src="image/Logo.svg" alt="">
+          <img id="logo-info" src="{{Storage::url('images/Logo.svg')}}" alt="">
         </div>
         <h3 class="subhead">Transforming Ideas Into Reality</h3>
         <div class="par">
@@ -81,38 +81,38 @@
         </div>
       </div>
       <div class="right-section-header">
-        <img id="Astro" src="image/4.svg" alt="">
+        <img id="Astro" src="{{Storage::url('images/4.svg')}}" alt="">
       </div>
     </div>
-      
+
     <div class="join">
-      <img id="cloud-4" src="image/Image.png" alt="">
-      <img id="cloud-5" src="image/Image.png" alt="">
-      <img id="cloud-6" src="image/Image.png" alt="">
-      <img class="pseudo" id="pseudo-1" src="image/pseudo.svg" alt="">
+      <img id="cloud-4" src="{{Storage::url('images/Image.png')}}" alt="">
+      <img id="cloud-5" src="{{Storage::url('images/Image.png')}}" alt="">
+      <img id="cloud-6" src="{{Storage::url('images/Image.png')}}" alt="">
+      <img class="pseudo" id="pseudo-1" src="{{Storage::url('images/pseudo.svg')}}" alt="">
       <div class="join-top bold1">
         <h1>Why <span>You</span> Should <br> Join <span>Us</span>?</h1>
       </div>
       <div class="join-bottom">
-        <img id="astro-3" src="image/8.png" alt="">
+        <img id="astro-3" src="{{Storage::url('images/8.png')}}" alt="">
           <div class="benefit skill">
-            <img src="image/Hand with key and question.png" alt="">
+            <img src="{{Storage::url('images/Hand with key and question.png')}}" alt="">
             <p>Skill<br>Enhancement</p>
           </div>
           <div class="benefit learning">
-          <img src="image/stack of books and mug next to laptop screen showing planets.png" alt="">
+          <img src="{{Storage::url('images/stack of books and mug next to laptop screen showing planets.png')}}" alt="">
             <p>Learning<br>Opportunities</p>
           </div>
           <div class="benefit network">
-            <img src="image/Company of young people.png" alt="">
+            <img src="{{Storage::url('images/Company of young people.png')}}" alt="">
             <p>Networking</p>
           </div>
           <div class="benefit recognition">
-            <img src="image/Gold trophy.png" alt="">
+            <img src="{{Storage::url('images/Gold trophy.png')}}" alt="">
             <p>Recognition &<br>Reward</p>
           </div>
           <div class="benefit resume">
-            <img src="image/service-icon-3.png.png" alt="">
+            <img src="{{Storage::url('images/service-icon-3.png.png')}}" alt="">
             <p>Resume & CV<br>Building</p>
           </div>
       </div>
@@ -125,31 +125,31 @@
       <div class="video-recap">
         <video src=""></video>
       </div>
-      <img id="border-join" src="image/Vector.png" alt="">
+      <img id="border-join" src="{{Storage::url('images/Vector.png')}}" alt="">
     </div>
-    
+
     <div id="champion">
-      <img class="pseudo" id="pseudo-2" src="image/pseudo.svg" alt="">
+      <img class="pseudo" id="pseudo-2" src="{{Storage::url('images/pseudo.svg')}}" alt="">
       <div class="champ-top">
         <h1>Champion Prizes</h1>
       </div>
       <div class="champ-bottom">
-        <img id="champ-img" src="image/image 4.png" alt="">
-        <img id="astro-4" src="image/7450346.png" alt="">
+        <img id="champ-img" src="{{Storage::url('images/image 4.png')}}" alt="">
+        <img id="astro-4" src="{{Storage::url('images/7450346.png')}}" alt="">
         <div class="champ-container first">
           <div class="num num-1">
             <h2>1</h2>
             <h3>st</h3>
           </div>
           <div class="champion-prize">
-            <img class="medal-img"" src="image/Medal First Place.png" alt="">
+            <img class="medal-img" src="{{Storage::url('images/Medal First Place.png')}}" alt="">
             <h4 class="prizes">Rp1.500.000,00</h4>
             <div class="merchandise">
-              <img src="image/Ellipse 3.png" alt="">
+              <img src="{{Storage::url('images/Ellipse 3.png')}}" alt="">
               <h5 class="subhead-prize">Hackathon's Merchandise</h5>
             </div>
             <div class="merchandise">
-              <img src="image/Ellipse 3.png" alt="">
+              <img src="{{Storage::url('images/Ellipse 3.png')}}" alt="">
               <h5 class="subhead-prize">Certificate</h5>
             </div>
           </div>
@@ -160,14 +160,14 @@
             <h3>nd</h3>
           </div>
           <div class="champion-prize">
-            <img class="medal-img"" src="image/Medal Second Place.png" alt="">
+            <img class="medal-img" src="{{Storage::url('images/Medal Second Place.png')}}" alt="">
             <h4 class="prizes">Rp1.000.000,00</h4>
             <div class="merchandise">
-              <img src="image/Ellipse 3.png" alt="">
+              <img src="{{Storage::url('images/Ellipse 3.png')}}" alt="">
               <h5 class="subhead-prize">Hackathon's Merchandise</h5>
             </div>
             <div class="merchandise">
-              <img src="image/Ellipse 3.png" alt="">
+              <img src="{{Storage::url('images/Ellipse 3.png')}}" alt="">
               <h5 class="subhead-prize">Certificate</h5>
             </div>
           </div>
@@ -178,24 +178,24 @@
             <h3>rd</h3>
           </div>
           <div class="champion-prize">
-            <img class="medal-img"" src="image/Medal Third Place.png" alt="">
+            <img class="medal-img" src="{{Storage::url('images/Medal Third Place.png')}}" alt="">
             <h4 class="prizes">Rp500.000,00</h4>
             <div class="merchandise">
-              <img src="image/Ellipse 3.png" alt="">
+              <img src="{{Storage::url('images/Ellipse 3.png')}}" alt="">
               <h5 class="subhead-prize">Hackathon's Merchandise</h5>
             </div>
             <div class="merchandise">
-              <img src="image/Ellipse 3.png" alt="">
+              <img src="{{Storage::url('images/Ellipse 3.png')}}" alt="">
               <h5 class="subhead-prize">Certificate</h5>
             </div>
           </div>
         </div>
       </div>
     </div>
-      
+
     <div id="mentorJuries">
-      <img class="pseudo" id="pseudo-2" src="image/pseudo.svg" alt="">
-      <img id="border-mentor" src="image/Vector3.png" alt="">
+      <img class="pseudo" id="pseudo-2" src="{{Storage::url('images/pseudo.svg')}}" alt="">
+      <img id="border-mentor" src="{{Storage::url('images/Vector3.png')}}" alt="">
       <div class="mentorJuries-head">
         <h1 class="MenTitle">Mentor & Jury</h1>
       </div>
@@ -203,17 +203,17 @@
         <h3 class="juries-title">Juries</h3>
         <div class="judge-container">
           <div class="judge">
-            <img src="image/Jury 2.png">
+            <img src="{{Storage::url('images/Jury 2.png')}}">
             <h5>Jury</h5>
             <p><span class="bold1">Kin Jennie</span><br> Software Engineer @ Odd Atelier</p>
           </div>
           <div class="judge">
-            <img src="image/Jury 1.png">
+            <img src="{{Storage::url('images/Jury 1.png')}}">
             <h5>Jury</h5>
             <p><span class="bold1">Kin Jennie</span><br> Software Engineer @ Odd Atelier</p>
           </div>
           <div class="judge">
-            <img src="image/Jury 3.png">
+            <img src="{{Storage::url('images/Jury 3.png')}}">
             <h5>Jury</h5>
             <p><span class="bold1">Kin Jennie</span><br> Software Engineer @ Odd Atelier</p>
           </div>
@@ -232,17 +232,17 @@
             <div class="slide satu">
               <div class="judge-container">
                 <div class="mentor">
-                  <img src="image/Mentor 1.svg">
+                  <img src="{{Storage::url('images/Mentor 1.svg')}}">
                   <h5>Mentor</h5>
                   <p><span class="bold1">Kin Jennie</span><br> Software Engineer @ Odd Atelier</p>
                 </div>
                 <div class="mentor">
-                  <img src="image/Mentor 3.svg">
+                  <img src="{{Storage::url('images/Mentor 3.svg')}}">
                   <h5>Mentor</h5>
                   <p><span class="bold1">Kin Jennie</span><br> Software Engineer @ Odd Atelier</p>
                 </div>
                 <div class="mentor">
-                  <img src="image/Mentor 4.svg">
+                  <img src="{{Storage::url('images/Mentor 4.svg')}}">
                   <h5>Mentor</h5>
                   <p><span class="bold1">Kin Jennie</span><br> Software Engineer @ Odd Atelier</p>
                 </div>
@@ -251,17 +251,17 @@
             <div class="slide dua">
               <div class="judge-container">
                 <div class="mentor">
-                  <img src="image/Mentor 5.svg">
+                  <img src="{{Storage::url('images/Mentor 5.svg')}}">
                   <h5>Mentor</h5>
                   <p><span class="bold1">Kin Jennie</span><br> Software Engineer @ Odd Atelier</p>
                 </div>
                 <div class="mentor">
-                  <img src="image/Mentor 8.svg">
+                  <img src="{{Storage::url('images/Mentor 8.svg')}}">
                   <h5>Mentor</h5>
                   <p><span class="bold1">Kin Jennie</span><br> Software Engineer @ Odd Atelier</p>
                 </div>
                 <div class="mentor">
-                  <img src="image/Mentor 9.svg">
+                  <img src="{{Storage::url('images/Mentor 9.svg')}}">
                   <h5>Mentor</h5>
                   <p><span class="bold1">Kin Jennie</span><br> Software Engineer @ Odd Atelier</p>
                 </div>
@@ -270,17 +270,17 @@
             <div class="slide tiga">
               <div class="judge-container">
                 <div class="mentor">
-                  <img src="image/Mentor 2.svg">
+                  <img src="{{Storage::url('images/Mentor 2.svg')}}">
                   <h5>Mentor</h5>
                   <p><span class="bold1">Kin Jennie</span><br> Software Engineer @ Odd Atelier</p>
                 </div>
                 <div class="mentor">
-                  <img src="image/Mentor 6.svg">
+                  <img src="{{Storage::url('images/Mentor 6.svg')}}">
                   <h5>Mentor</h5>
                   <p><span class="bold1">Kin Jennie</span><br> Software Engineer @ Odd Atelier</p>
                 </div>
                 <div class="mentor">
-                  <img src="image/Mentor 7.svg">
+                  <img src="{{Storage::url('images/Mentor 7.svg')}}">
                   <h5>Mentor</h5>
                   <p><span class="bold1">Kin Jennie</span><br> Software Engineer @ Odd Atelier</p>
                 </div>
@@ -299,21 +299,21 @@
     </div>
 
     <div id="FAQ">
-      <img class="pseudo" id="pseudo-2" src="image/pseudo.svg" alt="">
+      <img class="pseudo" id="pseudo-2" src="{{Storage::url('images/pseudo.svg')}}" alt="">
       <div class="faq-top">
         <h1>FAQ</h1>
         <h3>Frequently Asked Question</h3>
       </div>
       <div class="faq-bottom">
         <div class="bottom-left-faq">
-          <img src="image/6.png" alt="">
+          <img src="{{Storage::url('images/6.png')}}" alt="">
         </div>
         <div class="bottom-right-faq">
           <div class="question-con">
             <div class="con-top">
               <h3>Who is eligible to participate in this hackathon?</h3>
               <button onclick="showHide1()">
-                <img src="image/Dropdown Arrow.png" alt="">
+                <img src="{{Storage::url('images/Dropdown Arrow.png')}}" alt="">
               </button>
             </div>
             <div class="con-bottom" id="con-bottom1">
@@ -325,7 +325,7 @@
             <div class="con-top">
               <h3>Do I need a team to register, and how many members can a team have?</h3>
               <button onclick="showHide2()">
-                <img src="image/Dropdown Arrow.png" alt="">
+                <img src="{{Storage::url('images/Dropdown Arrow.png')}}" alt="">
               </button>
             </div>
             <div class="con-bottom" id="con-bottom2">
@@ -337,7 +337,7 @@
             <div class="con-top">
               <h3>How do we register our team for the event?</h3>
               <button onclick="showHide3()">
-                <img src="image/Dropdown Arrow.png" alt="">
+                <img src="{{Storage::url('images/Dropdown Arrow.png')}}" alt="">
               </button>
             </div>
             <div class="con-bottom" id="con-bottom3">
@@ -349,7 +349,7 @@
             <div class="con-top">
               <h3>What technical requirements are there for participation?</h3>
               <button onclick="showHide4()">
-                <img src="image/Dropdown Arrow.png" alt="">
+                <img src="{{Storage::url('images/Dropdown Arrow.png')}}" alt="">
               </button>
             </div>
             <div class="con-bottom" id="con-bottom4">
@@ -361,7 +361,7 @@
             <div class="con-top">
               <h3>Who is eligible to participate in this hackathon?</h3>
               <button onclick="showHide5()">
-                <img src="image/Dropdown Arrow.png" alt="">
+                <img src="{{Storage::url('images/Dropdown Arrow.png')}}" alt="">
               </button>
             </div>
             <div class="con-bottom" id="con-bottom5">
@@ -374,13 +374,13 @@
     </div>
 
     <div id="timeline">
-      <img class="pseudo" id="pseudo-2" src="image/pseudo.svg" alt="">
+      <img class="pseudo" id="pseudo-2" src="{{Storage::url('images/pseudo.svg')}}" alt="">
       <div class="time-top">
         <h3>Timeline</h3>
       </div>
       <div class="time-bottom">
         <div class="timeline">
-          <img src="image/10.png" alt="">
+          <img src="{{Storage::url('images/10.png')}}" alt="">
           <div class="container left">
             <div class="content">
               <h2>1 January 2024</h2>
@@ -409,11 +409,11 @@
           </div>
         </div>
       </div>
-      <img id="timeline-border" src="image/Vector9.png" alt="">
+      <img id="timeline-border" src="{{Storage::url('images/Vector9.png')}}" alt="">
     </div>
 
     <div id="sponsor">
-      <img class="pseudo" id="pseudo-3" src="image/pseudo.svg" alt="">
+      <img class="pseudo" id="pseudo-3" src="{{Storage::url('images/pseudo.svg')}}" alt="">
       <div class="sponsor-top">
         <h1>Our Sponsors</h1>
       </div>
@@ -421,30 +421,30 @@
         <div class="sponsor">
           <h2>Platinum Sponsor</h2>
           <div class="sponsor-img">
-            <img src="image/image 19.png" alt="">
-            <img src="image/image 20.png" alt="">
-            <img src="image/image 21.png" alt="">
+            <img src="{{Storage::url('images/image 19.png')}}" alt="">
+            <img src="{{Storage::url('images/image 20.png')}}" alt="">
+            <img src="{{Storage::url('images/image 21.png')}}" alt="">
           </div>
         </div>
         <div class="sponsor" id="gold">
           <h2>Gold Sponsor</h2>
           <div class="sponsor-img">
-            <img src="image/image 22.png" alt="">
-            <img src="image/image 23.png" alt="">
-            <img src="image/image 24.png" alt="">
+            <img src="{{Storage::url('images/image 22.png')}}" alt="">
+            <img src="{{Storage::url('images/image 23.png')}}" alt="">
+            <img src="{{Storage::url('images/image 24.png')}}" alt="">
           </div>
         </div>
         <div class="sponsor">
           <h2>Silver Sponsor</h2>
           <div class="sponsor-img" id="silver">
             <div id="silver-top">
-              <img src="image/image 25.png" alt="">
-              <img src="image/image 26.png" alt="">
+              <img src="{{Storage::url('images/image 25.png')}}" alt="">
+              <img src="{{Storage::url('images/image 26.png')}}" alt="">
             </div>
             <div id="silver-bottom">
-              <img src="image/image 27.png" alt="">
-              <img src="image/image 28.png" alt="">
-              <img src="image/image 29.png" alt="">
+              <img src="{{Storage::url('images/image 27.png')}}" alt="">
+              <img src="{{Storage::url('images/image 28.png')}}" alt="">
+              <img src="{{Storage::url('images/image 29.png')}}" alt="">
             </div>
           </div>
         </div>
@@ -452,67 +452,67 @@
     </div>
 
     <div id="media">
-      <img class="pseudo" id="pseudo-3" src="image/pseudo.svg" alt="">
+      <img class="pseudo" id="pseudo-3" src="{{Storage::url('images/pseudo.svg')}}" alt="">
       <div class="media-top">
         <h2>Media Partner</h2>
       </div>
       <div class="media-bottom">
-        <img src="image/11.png" alt="">
+        <img src="{{Storage::url('images/11.png')}}" alt="">
         <div class="media-left-con">
           <div class="media-img" id="media-1">
             <div class="slides-media1">
-              <img src="image/image 9.png" alt="">
-              <img src="image/image 6.png" alt="">
-              <img src="image/image 8.png" alt="">
-              <img src="image/image 10.png" alt="">
+              <img src="{{Storage::url('images/image 9.png')}}" alt="">
+              <img src="{{Storage::url('images/image 6.png')}}" alt="">
+              <img src="{{Storage::url('images/image 8.png')}}" alt="">
+              <img src="{{Storage::url('images/image 10.png')}}" alt="">
             </div>
             <div class="slides-media1">
-              <img src="image/image 9.png" alt="">
-              <img src="image/image 6.png" alt="">
-              <img src="image/image 8.png" alt="">
-              <img src="image/image 10.png" alt="">
+              <img src="{{Storage::url('images/image 9.png')}}" alt="">
+              <img src="{{Storage::url('images/image 6.png')}}" alt="">
+              <img src="{{Storage::url('images/image 8.png')}}" alt="">
+              <img src="{{Storage::url('images/image 10.png')}}" alt="">
             </div>
           </div>
           <div class="media-img" id="media-2">
             <div class="slides-media2">
-              <img src="image/image 9.png" alt="">
-              <img src="image/image 6.png" alt="">
-              <img src="image/image 8.png" alt="">
-              <img src="image/image 10.png" alt="">
+              <img src="{{Storage::url('images/image 9.png')}}" alt="">
+              <img src="{{Storage::url('images/image 6.png')}}" alt="">
+              <img src="{{Storage::url('images/image 8.png')}}" alt="">
+              <img src="{{Storage::url('images/image 10.png')}}" alt="">
             </div>
             <div class="slides-media2">
-              <img src="image/image 9.png" alt="">
-              <img src="image/image 6.png" alt="">
-              <img src="image/image 8.png" alt="">
-              <img src="image/image 10.png" alt="">
+              <img src="{{Storage::url('images/image 9.png')}}" alt="">
+              <img src="{{Storage::url('images/image 6.png')}}" alt="">
+              <img src="{{Storage::url('images/image 8.png')}}" alt="">
+              <img src="{{Storage::url('images/image 10.png')}}" alt="">
             </div>
           </div>
         </div>
       </div>
-      <img id="media-border" src="image/Vector10.png" alt="">
+      <img id="media-border" src="{{Storage::url('images/Vector10.png')}}" alt="">
     </div>
 
     <div id="event">
-      <img class="pseudo" id="pseudo-4" src="image/pseudo.svg" alt="">
+      <img class="pseudo" id="pseudo-4" src="{{Storage::url('images/pseudo.svg')}}" alt="">
       <div class="event-top">
         <h2>Other Events</h2>
       </div>
       <div class="event-bottom">
         <div class="event-bottomLR">
-          <img src="image/Frame 162616.png" alt="">
+          <img src="{{Storage::url('images/Frame 162616.png')}}" alt="">
           <div class="event-info">
             <h3>Virtual Conference</h3>
             <div class="date-event">
               <div class="date">
-                <img src="image/mingcute_time-fill.svg" alt="">
+                <img src="{{Storage::url('images/mingcute_time-fill.svg')}}" alt="">
                 <h5>1 February 2024</h5>
               </div>
               <div class="time">
-                <img src="image/lets-icons_date-fill.svg" alt="">
+                <img src="{{Storage::url('images/lets-icons_date-fill.svg')}}" alt="">
                 <h5>13:00 - End</h5>
               </div>
               <div class="public">
-                <img src="image/ic_baseline-people.svg" alt="">
+                <img src="{{Storage::url('images/ic_baseline-people.svg')}}" alt="">
                 <h5>Public</h5>
               </div>
             </div>
@@ -529,15 +529,15 @@
             <h3>Developer Workshop</h3>
             <div class="date-event">
               <div class="date">
-                <img src="image/mingcute_time-fill.svg" alt="">
+                <img src="{{Storage::url('images/mingcute_time-fill.svg')}}" alt="">
                 <h5>5 February 2024</h5>
               </div>
               <div class="time">
-                <img src="image/lets-icons_date-fill.svg" alt="">
+                <img src="{{Storage::url('images/lets-icons_date-fill.svg')}}" alt="">
                 <h5>13:00 - End</h5>
               </div>
               <div class="public">
-                <img src="image/ic_baseline-people.svg" alt="">
+                <img src="{{Storage::url('images/ic_baseline-people.svg')}}" alt="">
                 <h5>Participants</h5>
               </div>
             </div>
@@ -548,19 +548,19 @@
               <button class="Register yellow">Register</button>
             </div>
           </div>
-          <img src="image/Frame 162629.png" alt="">
+          <img src="{{Storage::url('images/Frame 162629.png')}}" alt="">
         </div>
       </div>
     </div>
 
     <div id="contact">
-      <img class="pseudo" id="pseudo-2" src="image/pseudo.svg" alt="">
+      <img class="pseudo" id="pseudo-2" src="{{Storage::url('images/pseudo.svg')}}" alt="">
       <div class="contact-top">
         <h2>Contact Us</h2>
       </div>
       <div class="contact-bottom">
         <div class="contact-btm-left">
-          <img src="image/7450347.png" alt="">
+          <img src="{{Storage::url('images/7450347.png')}}" alt="">
         </div>
         <div class="contact-btm-right">
           <form action="" id="form-contact">
@@ -595,26 +595,26 @@
         <div class="bottom-top">
           <div class="bottom2">
             <h5>Organized by</h5>
-            <img src="image/image 31.svg" alt="">
+            <img src="{{Storage::url('images/image 31.svg')}}" alt="">
           </div>
           <div class="bottom2">
             <h5>Follow Us</h5>
             <div class="btn-contact">
-              <a href="https://www.instagram.com/technoscapebncc"><img src="image/Instgram.svg" alt=""></a>
-              <a href="https://twitter.com/bncc_binus"><img src="image/Twitter.svg" alt=""></a>
-              <a href="https://www.facebook.com/bina.nusantara.computer.club"><img src="image/Facebook.svg" alt=""></a>
-              <a href="https://www.linkedin.com/company/bina-nusantara-computer-club/mycompany/"><img src="image/Linkedin.svg" alt=""></a>
+              <a href="https://www.instagram.com/technoscapebncc"><img src="{{Storage::url('images/Instgram.svg')}}" alt=""></a>
+              <a href="https://twitter.com/bncc_binus"><img src="{{Storage::url('images/Twitter.svg')}}" alt=""></a>
+              <a href="https://www.facebook.com/bina.nusantara.computer.club"><img src="{{Storage::url('images/Facebook.svg')}}" alt=""></a>
+              <a href="https://www.linkedin.com/company/bina-nusantara-computer-club/mycompany/"><img src="{{Storage::url('images/Linkedin.svg')}}" alt=""></a>
             </div>
             <div>All Rights Reserved BNCC 2024 © Bina Nusantara Computer Club</div>
           </div>
           <div class="bottom2">
             <h5>Powered By</h5>
-            <img src="image/Frame 162680.svg" alt="">
+            <img src="{{Storage::url('images/Frame 162680.svg')}}" alt="">
           </div>
         </div>
         <div id="privacy">Privacy Policy 61.8 and Terms of Service</div>
       </div>
-      <img id="contact-border" src="image/foot-back.svg" alt="">
+      <img id="contact-border" src="{{Storage::url('images/foot-back.svg')}}" alt="">
     </div>
   </div>
 
