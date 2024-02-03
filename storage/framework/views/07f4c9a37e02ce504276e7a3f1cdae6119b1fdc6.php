@@ -22,7 +22,7 @@
     <div class="content1 right">
       <h1>Group<br>Registration</h1>
 
-      <form method = "POST" action="/post-create-group">
+      <form action="/post-create-group" method = "POST" enctype="multipart/form-data" >
         <?php echo csrf_field(); ?>
         <div class="input-form">
           <input type="text" name= "group_name_input" placeholder="Group Name" id="groupName" oninput="validateName()">
