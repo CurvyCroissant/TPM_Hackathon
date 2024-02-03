@@ -21,13 +21,15 @@
     </div>
     <div class="content1 right">
       <h1>Group<br>Registration</h1>
-      <form id="form-groupRegis" action="">
+
+      <form method = "POST" action="/post-create-group">
+        <?php echo csrf_field(); ?>
         <div class="input-form">
-          <input type="text" placeholder="Group Name" id="groupName" oninput="validateName()">
+          <input type="text" name= "group_name_input" placeholder="Group Name" id="groupName" oninput="validateName()">
           <p id="error-name" class="error-message"></p>
         </div>
         <div class="input-form">
-          <input type="password" placeholder="Password" id="password" oninput="validatePassword()">
+          <input type="password" name="password_input" placeholder="Password" id="password" oninput="validatePassword()">
           <p id="error-pass" class="error-message"></p>
         </div>
         <div class="input-form">

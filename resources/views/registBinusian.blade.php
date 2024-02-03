@@ -25,37 +25,37 @@
       <form action="" method="post" enctype="multipart/form-data">
         <div class="inputform">
           <!-- <label for="fullName">Full Name:</label> -->
-          <input type="text" id="fullName" name="fullName" placeholder = "Full Name" required oninput="validateFullName()">
+          <input type="text" id="fullName" name="fullName_input" placeholder = "Full Name" required oninput="validateFullName()">
           <p id="error-name" class="error-message"></p>
         </div>
         <div class="inputform">
           <!-- <label for="email">Email:</label> -->
-          <input type="email" id="email" name="email" placeholder="Email" required oninput="validateEmail()">
+          <input type="email" id="email" name="email_input" placeholder="Email" required oninput="validateEmail()">
           <p id="error-email" class="error-message"></p>
         </div>
         <div class="inputform">
           <!-- <label for="phoneNumber">Phone Number:</label> -->
-          <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="Whatsapp Number" required oninput="validatePhoneNumber()">
+          <input type="tel" id="phoneNumber" name="phoneNumber_input" placeholder="Whatsapp Number" required oninput="validatePhoneNumber()">
           <p id="error-phone" class="error-message"></p>
         </div>
         <div class="inputform">
           <!-- <label for="lineId">LINE ID:</label> -->
-          <input type="text" id="lineId" name="lineId" placeholder="Line Id" required oninput="validateLineId()">
+          <input type="text" id="lineId" name="lineId_input" placeholder="Line Id" required oninput="validateLineId()">
           <p id="error-line" class="error-message"></p>
         </div>
         <div class="inputform">
           <!-- <label for="githubId">Github ID:</label> -->
-          <input type="text" id="githubId" name="githubId" placeholder="Github/Gitlab Id" required oninput="validateGithubId()">
+          <input type="text" id="githubId" name="githubId_input" placeholder="Github/Gitlab Id" required oninput="validateGithubId()">
           <p id="error-github" class="error-message"></p>
         </div>
         <div class="inputform">
           <!-- <label for="birthPlace">Birth Place:</label> -->
-          <input type="text" id="birthPlace" name="birthPlace" placeholder ="Birth Place" required oninput="validateBirthPlace()">
+          <input type="text" id="birthPlace" name="birthPlace_input" placeholder ="Birth Place" required oninput="validateBirthPlace()">
           <p id="error-place" class="error-message"></p>
         </div>
         <div class="inputform">
           <!-- <label for="birthDate">Birth Date:</label> -->
-          <input type="text" id="birthDate" name="birthDate" placeholder="Birth Date" onfocus="this.type='date'" required oninput="validateBirthDate()">
+          <input type="text" id="birthDate" name="birthDate_input" placeholder="Birth Date" onfocus="this.type='date'" required oninput="validateBirthDate()">
           <p id="error-date" class="error-message"></p>
         </div>
         <div id="fileInputs">
