@@ -11,7 +11,6 @@ html{
 body{
   font-family: jost;
   background: #000A1F;
-  /* height: 200vh; */
 }
 
 #navbar{
@@ -265,7 +264,7 @@ body{
   font-size: 2.50106rem;
   font-style: normal;
   font-weight: 600;
-  line-height: 3.0665rem; /* 122.607% */
+  line-height: 3.0665rem;
 }
 
 .contact-bottom{
@@ -321,9 +320,7 @@ body{
 .timeline {
   position: relative;
   width: 100%;
-  /* max-width: 1140px; */
   margin: 0 auto;
-  /* padding: 10px 0; */
 }
 
 .timeline::after {
@@ -414,7 +411,6 @@ body{
   font-size: 2.5rem;
   font-style: normal;
   font-weight: 700;
-  /* line-height: 3.26319rem; 130.528% */
 }
 
 .content a{
@@ -485,7 +481,6 @@ body{
 
 .bottom2 div, #privacy{
   color: #D8D8D8;
-  /* text-align: center; */
   font-size: 1.02006rem;
   font-style: normal;
   font-weight: 400;

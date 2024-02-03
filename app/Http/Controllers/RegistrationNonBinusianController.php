@@ -23,5 +23,7 @@ class RegistrationNonBinusianController extends Controller
             'cv' => 'required|mimes:pdf,jpg,jpeg,png|max:3000',
             'idCard' => 'required|mimes:pdf,jpg,jpeg,png|max:3000',
         ]);
+
+        
     }
 }

@@ -31,7 +31,7 @@ body{
 
 .left{
   width: 85%;
-  background-image: url(image/BACKGROUND.svg);
+  background-image: url('/storage/images/BACKGROUND.svg');
   background-size: cover;
   background-position-x: 60%;
   background-position-y: 0%;
@@ -107,7 +107,7 @@ body{
   font-size: 4.07625rem;
   font-style: normal;
   font-weight: 600;
-  line-height: 4rem; /* 100% */
+  line-height: 4rem;
   letter-spacing: -0.04075rem;
   padding: 1rem;
   text-transform: capitalize;
@@ -145,37 +145,6 @@ body{
   color: red;
   font-weight: 500;
 }
-
-/* .radio{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  gap: 3rem;
-}
-
-.radiobinus{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-}
-
-.radiobinus input{
-  cursor: pointer;
-}
-
-.radiobinus label{
-  color: #90949C;
-  text-align: center;
-  font-family: Jost;
-  font-size: 1.31156rem;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 2.25131rem;
-  cursor: pointer;
-} */
 
 .right button{
   width: 12.75rem;

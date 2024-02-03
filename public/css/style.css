@@ -4,12 +4,11 @@
   font-family: jost;
 }
 html{
-  font-size: 100%; /*16px*/
+  font-size: 100%;
   scroll-behavior: smooth;
 }
 
 body{
-  /* height: 700vh; */
   background-color: #000C2F;
   overflow-x: hidden;
   position: relative;
@@ -35,7 +34,6 @@ body{
   padding: 2vw 2vw;
   position: sticky;
   top: 0;
-  /* background-color: #000C2F; */
   z-index: 99;
   transition: background-color 0.2s ease-in-out;
 }
@@ -131,7 +129,6 @@ body{
   justify-content: center;
   margin: 0 auto;
   padding: 0 0 7vw;
-  /* height: 100vh; */
   gap: 1rem;
 }
 
@@ -216,7 +213,6 @@ body{
   width: 100%;
   margin: 0 auto;
   padding: 7vw 0;
-  /* height: 100vh; */
   background-color: #000A1F;
 }
 
@@ -702,13 +698,11 @@ body{
 
 .slider{
   width: 67.625vw;
-  /* height: 400px; */
   overflow: hidden;
 }
 
 .slides{
   width: 400%;
-  /* height: 400px; */
   display: flex;
 }
 
@@ -717,7 +711,6 @@ body{
 }
 
 .slide{
-  /* padding-right: 1rem; */
   width: 25%;
   transition: 0.7s;
 }
@@ -731,12 +724,10 @@ body{
 
 .navigation-manual{
   position: absolute;
-  /* width: 80%; */
   margin-top: 0px;
   display: flex;
   justify-content: center;
   align-items: center;
-  /* margin: 0 auto; */
 }
 
 .manual-btn{
@@ -829,7 +820,6 @@ body{
   padding: 1.42113rem;
   border-radius: 15px;
   background-color: #292738;
-  /* transition: all 2s; */
 }
 
 .con-top{
@@ -855,7 +845,6 @@ body{
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  /* transition: all 2s; */
   display: none;
 }
 
@@ -1439,7 +1428,6 @@ body{
 
 .bottom2 div, #privacy{
   color: #D8D8D8;
-  /* text-align: center; */
   font-size: 1.02006rem;
   font-style: normal;
   font-weight: 400;

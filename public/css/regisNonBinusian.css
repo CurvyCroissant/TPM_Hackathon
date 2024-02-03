@@ -7,12 +7,9 @@
 
 
 body {
-  /* font-family: Arial, sans-serif; */
-  background-image: url('image/BACKGROUND.svg');
+  background-image: url('storage/images/BACKGROUND.svg');
   background-size: cover;
   background-repeat: repeat;
-  /* background-attachment: fixed; */
-  /* background-size: 100vh auto; */
   position: relative;
 }
 
@@ -35,13 +32,14 @@ body {
 .regis-top h2 {
   background-image: linear-gradient(to right,rgb(140, 110, 247),rgb(225, 138, 225),rgb(119, 85, 241));
   -webkit-background-clip: text;
+  background-clip:text;
   -webkit-text-fill-color: transparent;
   text-align: center;
   font-family: Jost;
   font-size: 4.07625rem;
   font-style: normal;
   font-weight: 600;
-  line-height: 4.07625rem; /* 100% */
+  line-height: 4.07625rem;
   padding-bottom: 1vw;
 }
 
