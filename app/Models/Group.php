@@ -16,7 +16,7 @@ class Group extends Model
 
     public function members()
     {
-        return $this->hasMany(Member::class);
+        return $this->hasOne(Member::class);
     }
     
 }
