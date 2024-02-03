@@ -11,7 +11,7 @@ class RegistrationBinusianController extends Controller
         return view('registBinusian');
     }
 
-    public function createLeaderBinusian(Request $request) {
+    public function store(Request $request) {
         $validatedData = $request->validate([
             'fullName' => 'required',
             'email' => 'required|email:dns|unique:users',
@@ -24,7 +24,9 @@ class RegistrationBinusianController extends Controller
             'flazzCard' => 'required|mimes:pdf,jpg,jpeg,png|max:3000',
         ]);
 
-        return redirect('dashboard');
+        Member::create($validatedData);
+
+        return redirect('/dashboard');
     }
 }
 

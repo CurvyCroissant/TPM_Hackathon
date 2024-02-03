@@ -9,38 +9,29 @@ use App\Http\Controllers\RegistrationBinusianController;
 use App\Http\Controllers\RegistrationNonBinusianController;
 use App\Http\Controllers\AdminPanelController;
 
-// HOME
+// HomeController
 Route::get('/', [HomeController::class, 'home'])->name('home');
 
 
-// DASHBOARD
+// DashboardController
 Route::get('/dashboard', [DashboardController::class, 'dashboard'])->name('dashboard');
 
 
-// LOGIN
+// LoginController
 Route::get('/login', [LoginController::class, 'login'])->name('login');
 
 
-// TEAM REGISTRATION
+// RegistrationController
 Route::get('/registration', [RegistrationController::class, 'registration'])->name('registration');
+Route::post('/create-group', [RegistrationController::class, 'store']);
 
-    // Post Group
-    Route::POST('/post-create-group', [RegistrationController::class, 'createGroup']);
-
-
-// BINUSIAN REGISTRATION
+// RegistrationBinusianController
 Route::get('/registration-binusian', [RegistrationBinusianController::class, 'registrationBinusian'])->name('registration-binusian');
+Route::post('/create-leader-binusian', [RegistrationBinusianController::class, 'store']);
 
-    // Post Leader Binusian
-    Route::POST('/post-create-leader-binusian', [RegistrationBinusianController::class, 'createLeaderBinusian']);
-
-
-// NON-BINUSIAN REGISTRATION
+// RegistrationNonBinusianController
 Route::get('/registration-non-binusian', [RegistrationNonBinusianController::class, 'registrationNonBinusian'])->name('registration-non-binusian');
+Route::post('/create-leader-non-binusian', [RegistrationNonBinusianController::class, 'store']);
 
-    // Post Leader Non Binusian
-    Route::POST('/post-create-leader-non-binusian', [RegistrationNonBinusianController::class, 'createLeaderNonBinusian']);
-
-
-// ADMIN PANEL
+// AdminPanelController
 Route::get('/admin-panel', [AdminPanelController::class, 'adminPanel'])->name('admin-panel');
