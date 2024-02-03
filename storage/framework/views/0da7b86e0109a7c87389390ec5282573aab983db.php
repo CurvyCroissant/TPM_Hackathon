@@ -16,7 +16,7 @@
       <a href="">Admin Panel</a>
 
       
-      <button>Log Out</button>
+      <a href="<?php echo e(route('home')); ?>"> <button class="home">Log Out</button></a>
 
     </div>
   </div>
