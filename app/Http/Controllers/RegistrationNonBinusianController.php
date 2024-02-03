@@ -24,6 +24,8 @@ class RegistrationNonBinusianController extends Controller
             'idCard' => 'required|mimes:pdf,jpg,jpeg,png|max:3000',
         ]);
 
-        
+        Member::create($validatedData);
+
+        return redirect('/dashboard');
     }
 }

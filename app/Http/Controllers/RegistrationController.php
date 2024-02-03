@@ -17,7 +17,6 @@ class RegistrationController extends Controller
             'password' => $request -> password_input
         ]);
 
-        // Belom ditambahin condition
         return redirect('registration');
     }
 }

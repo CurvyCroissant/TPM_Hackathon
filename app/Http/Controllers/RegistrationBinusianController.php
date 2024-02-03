@@ -11,20 +11,22 @@ class RegistrationBinusianController extends Controller
         return view('registBinusian');
     }
 
-    public function createLeaderBinusian(Request $request) {
-        Member::create([
-            'fullname' => $request -> fullname_input,
-            'email' => $request -> email_input,
-            'waNumber' => $request -> waNumber_input,
-            'lineId' => $request -> lineId_input,
-            'gitId' => $request -> gitId_input,
-            'birthPlace' => $request -> birthPlace_input,
-            'birthDate' => $request -> birthDate_input,
-            'cv' => $request -> cv_input,
-            'flazzCard' => $request -> flazzcard_input,
+    public function store(Request $request) {
+        $validatedData = $request->validate([
+            'fullName' => 'required',
+            'email' => 'required|email:dns|unique:users',
+            'waNumber' => 'required|numeric',
+            'lineId' => 'required',
+            'gitId' => 'required',
+            'birthPlace' => 'required',
+            'birthDate' => 'required',
+            'cv' => 'required|mimes:pdf,jpg,jpeg,png|max:3000',
+            'flazzCard' => 'required|mimes:pdf,jpg,jpeg,png|max:3000',
         ]);
 
-        return redirect('dashboard');
+        Member::create($validatedData);
+
+        return redirect('/dashboard');
     }
 }
 
