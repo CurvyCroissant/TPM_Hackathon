@@ -25,13 +25,17 @@ Route::get('/login', [LoginController::class, 'login'])->name('login');
 Route::get('/registration', [RegistrationController::class, 'registration'])->name('registration');
 Route::post('/create-group', [RegistrationController::class, 'store']);
 
+
 // RegistrationBinusianController
 Route::get('/registration-binusian', [RegistrationBinusianController::class, 'registrationBinusian'])->name('registration-binusian');
 Route::post('/create-leader-binusian', [RegistrationBinusianController::class, 'store']);
+
 
 // RegistrationNonBinusianController
 Route::get('/registration-non-binusian', [RegistrationNonBinusianController::class, 'registrationNonBinusian'])->name('registration-non-binusian');
 Route::post('/create-leader-non-binusian', [RegistrationNonBinusianController::class, 'store']);
 
+
 // AdminPanelController
 Route::get('/admin-panel', [AdminPanelController::class, 'adminPanel'])->name('admin-panel');
+

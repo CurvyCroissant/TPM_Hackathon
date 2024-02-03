@@ -27,6 +27,5 @@ class RegistrationNonBinusianController extends Controller
         Member::create($validatedData);
 
         return redirect('/dashboard');
-
     }
 }
