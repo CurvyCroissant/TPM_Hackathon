@@ -24,6 +24,9 @@ Route::get('/login', [LoginController::class, 'login'])->name('login');
 // TEAM REGISTRATION
 Route::get('/registration', [RegistrationController::class, 'registration'])->name('registration');
 
+    // Post
+    Route::post('/post-create-group', [RegistrationController::class, 'createGroup']);
+
 
 // BINUSIAN REGISTRATION
 Route::get('/registration-binusian', [RegistrationBinusianController::class, 'registrationBinusian'])->name('registration-binusian');
