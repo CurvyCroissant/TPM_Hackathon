@@ -16,12 +16,13 @@
       <h1>Get Yourself<br>Ready And Join<br>us</h1>
       <div id="login-info">
         <h4>Don't have an account?</h4>
-        <button>Register</button>
+        <a href="{{ route('registration') }}"><button class="Register">Register</button></a>
+
       </div>
     </div>
     <div class="content1 right">
       <h1>Group<br>Log In</h1>
-      
+
       <form id="form-groupRegis" action="">
         <div class="input-form">
           <input type="text" placeholder="Group Name" id="groupName" oninput="validateName()">

@@ -16,13 +16,14 @@
       <h1>Get Yourself<br>Ready And Join<br>us</h1>
       <div id="login-info">
         <h4>Already have an account?</h4>
-        <button>Login</button>
+        <a href="{{ route('login') }}"> <button>Login</button></a>
+
       </div>
     </div>
     <div class="content1 right">
       <h1>Group<br>Registration</h1>
 
-      <form method = "POST" action="/post-create-group">
+      <form action="/post-create-group" method = "POST" enctype="multipart/form-data" >
         @csrf
         <div class="input-form">
           <input type="text" name= "group_name_input" placeholder="Group Name" id="groupName" oninput="validateName()">

@@ -17,7 +17,7 @@ Route::get('/', [HomeController::class, 'home'])->name('home');
 Route::get('/dashboard', [DashboardController::class, 'dashboard'])->name('dashboard');
 
 
-// loginController
+// LoginController
 Route::get('/login', [LoginController::class, 'login'])->name('login');
 
 

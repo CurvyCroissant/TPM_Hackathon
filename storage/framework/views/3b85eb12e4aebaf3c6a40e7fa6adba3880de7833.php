@@ -22,7 +22,9 @@
       <h2>Leader<br>Registration</h2>
     </div>
     <div class="regis-bottom">
-      <form action="" method="post" enctype="multipart/form-data">
+
+      <form action="/post-create-leader-binusian" method="POST" enctype="multipart/form-data">
+        <?php echo csrf_field(); ?>
         <div class="inputform">
           <!-- <label for="fullName">Full Name:</label> -->
           <input type="text" id="fullName" name="fullName_input" placeholder = "Full Name" required oninput="validateFullName()">
@@ -61,14 +63,14 @@
         <div id="fileInputs">
           <!-- <label for="cv">Upload CV (PDF or Word):</label> -->
           <div class="file-container">
-            <input type="file" id="cv" name="cv_input" accept=".pdf, .doc, .docx" hidden oninput="validateCV()">
+            <input type="file" id="cv" name="cv" accept=".pdf, .doc, .docx" hidden oninput="validateCV()">
             <span id="text-cv">Upload CV</span>
             <button type="button" class="file-btn" id="btn-cv">Select File <img src="<?php echo e(Storage::url('images/Upload.svg')); ?>" alt=""></button>
           </div>
           <!-- <p id="error-cv" class="error-message"></p> -->
           <h5>File format should be in PDF, JPG, JPEG or PNG</h5>
           <div class="file-container">
-            <input type="file" id="flazzCard" name="flazzCard_input" accept=".png, .jpg, .jpeg" hidden oninput="validateFlazzCard()">
+            <input type="file" id="flazzCard" name="flazzCard" accept=".png, .jpg, .jpeg" hidden oninput="validateFlazzCard()">
             <span id="text-flazz">Upload Flazz Card</span>
             <button type="button" class="file-btn" id="btn-flazz">Select File <img src="<?php echo e(Storage::url('images/Upload.svg')); ?>" alt=""></button>
           </div>

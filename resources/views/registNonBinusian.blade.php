@@ -22,7 +22,9 @@
       <h2>Leader<br>Registration</h2>
     </div>
     <div class="regis-bottom">
-      <form action="" method="post" enctype="multipart/form-data">
+        
+        <form action="/post-create-leader-non-binusian" method="POST" enctype="multipart/form-data">
+            @csrf
         <div class="inputform">
           <!-- <label for="fullName">Full Name:</label> -->
           <input type="text" id="fullName" name="fullName_input" placeholder = "Full Name" required oninput="validateFullName()">

@@ -16,7 +16,7 @@
       <a href="">Admin Panel</a>
 
       {{-- #1 LOGOUT BUTTON --}}
-      <button>Log Out</button>
+      <a href="{{ route('home') }}"> <button class="home">Log Out</button></a>
 
     </div>
   </div>
