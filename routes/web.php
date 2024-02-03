@@ -32,14 +32,14 @@ Route::get('/registration', [RegistrationController::class, 'registration'])->na
 Route::get('/registration-binusian', [RegistrationBinusianController::class, 'registrationBinusian'])->name('registration-binusian');
 
     // Post Leader Binusian
-    Route::post('/post-create-leader-binusian', [RegistrationController::class, 'createLeaderBinusian']);
+    Route::post('/post-create-leader-binusian', [RegistrationBinusianController::class, 'createLeaderBinusian']);
 
 
 // NON-BINUSIAN REGISTRATION
 Route::get('/registration-non-binusian', [RegistrationNonBinusianController::class, 'registrationNonBinusian'])->name('registration-non-binusian');
 
     // Post Leader Non Binusian
-    Route::post('/post-create-leader-non-binusian', [RegistrationController::class, 'createLeaderNonBinusian']);
+    Route::post('/post-create-leader-non-binusian', [RegistrationNonBinusianController::class, 'createLeaderNonBinusian']);
 
 
 // ADMIN PANEL
