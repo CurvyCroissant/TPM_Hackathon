@@ -30,7 +30,7 @@ body{
 
 .left{
   width: 85%;
-  background-image: url('storage/images/BACKGROUND.svg');
+  background-image: url('/storage/images/BACKGROUND.svg');
   background-size: cover;
   background-position-x: 60%;
   background-position-y: 0%;
@@ -162,7 +162,6 @@ body{
 }
 
 .radiobinus input{
-  /* width: 5rem; */
   cursor: pointer;
 }
 

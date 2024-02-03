@@ -7,7 +7,7 @@
 
 
 body {
-  background-image: url('storage/images/BACKGROUND.svg');
+  background-image: url('/storage/images/BACKGROUND.svg');
   background-size: cover;
   background-repeat: repeat;
   position: relative;

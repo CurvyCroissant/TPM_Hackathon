@@ -21,6 +21,7 @@
     </div>
     <div class="content1 right">
       <h1>Group<br>Log In</h1>
+      
       <form id="form-groupRegis" action="">
         <div class="input-form">
           <input type="text" placeholder="Group Name" id="groupName" oninput="validateName()">
