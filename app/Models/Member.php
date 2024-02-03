@@ -22,6 +22,7 @@ class Member extends Model
         'idCard'
     ];
 
+
     public function group()
     {
         return $this->belongsTo(Group::class);
