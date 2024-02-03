@@ -24,16 +24,22 @@ Route::get('/login', [LoginController::class, 'login'])->name('login');
 // TEAM REGISTRATION
 Route::get('/registration', [RegistrationController::class, 'registration'])->name('registration');
 
-    // Post
+    // Post Group
     Route::post('/post-create-group', [RegistrationController::class, 'createGroup']);
 
 
 // BINUSIAN REGISTRATION
 Route::get('/registration-binusian', [RegistrationBinusianController::class, 'registrationBinusian'])->name('registration-binusian');
 
+    // Post Leader Binusian
+    Route::post('/post-create-leader-binusian', [RegistrationController::class, 'createLeaderBinusian']);
+
 
 // NON-BINUSIAN REGISTRATION
 Route::get('/registration-non-binusian', [RegistrationNonBinusianController::class, 'registrationNonBinusian'])->name('registration-non-binusian');
+
+    // Post Leader Non Binusian
+    Route::post('/post-create-leader-non-binusian', [RegistrationController::class, 'createLeaderNonBinusian']);
 
 
 // ADMIN PANEL
