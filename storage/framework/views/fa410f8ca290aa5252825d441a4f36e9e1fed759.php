@@ -16,11 +16,13 @@
       <h1>Get Yourself<br>Ready And Join<br>us</h1>
       <div id="login-info">
         <h4>Don't have an account?</h4>
-        <button>Register</button>
+        <a href="<?php echo e(route('registration')); ?>"><button class="Register">Register</button></a>
+
       </div>
     </div>
     <div class="content1 right">
       <h1>Group<br>Log In</h1>
+
       <form id="form-groupRegis" action="">
         <div class="input-form">
           <input type="text" placeholder="Group Name" id="groupName" oninput="validateName()">
@@ -30,20 +32,6 @@
           <input type="password" placeholder="Password" id="password" oninput="validatePassword()">
           <p id="error-pass" class="error-message"></p>
         </div>
-        <!-- <div class="input-form">
-          <input type="password" placeholder="Confirm Password" id="conPassword" oninput="validateConfirmPassword()">
-          <p id="error-conPass" class="error-message"></p>
-        </div> -->
-        <!-- <div class="radio">
-          <div class="radiobinus">
-            <input type="radio" id="radio-binusian" name="radiobinus">
-            <label for="radio-binusian">Binusian</label>
-          </div>
-          <div class="radiobinus">
-            <input type="radio" id="radio-non" name="radiobinus">
-            <label for="radio-non">Non-Binusian</label>
-          </div>
-        </div> -->
       </form>
 
       

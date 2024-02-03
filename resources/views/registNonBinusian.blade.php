@@ -22,7 +22,7 @@
       <h2>Leader<br>Registration</h2>
     </div>
     <div class="regis-bottom">
-
+        
         <form action="/post-create-leader-non-binusian" method="POST" enctype="multipart/form-data">
             @csrf
         <div class="inputform">

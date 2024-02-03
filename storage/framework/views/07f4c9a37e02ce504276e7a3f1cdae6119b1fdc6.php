@@ -16,7 +16,8 @@
       <h1>Get Yourself<br>Ready And Join<br>us</h1>
       <div id="login-info">
         <h4>Already have an account?</h4>
-        <button>Login</button>
+        <a href="<?php echo e(route('login')); ?>"> <button>Login</button></a>
+
       </div>
     </div>
     <div class="content1 right">
