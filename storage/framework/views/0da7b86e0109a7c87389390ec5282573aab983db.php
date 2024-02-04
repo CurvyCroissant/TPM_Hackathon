@@ -97,10 +97,13 @@
               <img src="<?php echo e(Storage::url('images/ep_edit.svg')); ?>" alt="">
               <span>Edit Data</span>
             </button>
-            <button id="delete-btn">
+            <form action = "/delete-group/" <?php echo e($group->id); ?> method="post">
+                <?php echo csrf_field(); ?>
+            <button type="submit" id="delete-btn" >
               <img src="<?php echo e(Storage::url('images/Vector (2).svg')); ?>" alt="">
               <span>Delete Team</span>
             </button>
+            </form>
           </span>
         </div>
 

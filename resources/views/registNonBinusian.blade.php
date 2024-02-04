@@ -65,14 +65,14 @@
           <div class="file-container">
             <input type="file" id="cv" name="cv_image_input" accept=".pdf, .doc, .docx" hidden oninput="validateCV()">
             <span id="text-cv">Upload CV</span>
-            <button type="button" class="file-btn" id="btn-cv">Select File <img src="{{Storage::url('images/Upload.svg')}}" alt=""></button>
+            <button type="button" class="file-btn" onclick="triggerFileInput()" id="btn-cv">Select File <img src="{{Storage::url('images/Upload.svg')}}" alt=""></button>
           </div>
           <!-- <p id="error-cv" class="error-message"></p> -->
           <h5>File format should be in PDF, JPG, JPEG or PNG</h5>
           <div class="file-container">
             <input type="file" id="IDCard" name="IDCard_image_input" accept=".png, .jpg, .jpeg" hidden oninput="validateIDCard()">
             <span id="text-ID">Upload ID Card</span>
-            <button type="button" class="file-btn" id="btn-ID">Select File <img src="{{Storage::url('images/Upload.svg')}}" alt=""></button>
+            <button type="button" class="file-btn" onclick="triggerFileInput2()" id="btn-ID">Select File <img src="{{Storage::url('images/Upload.svg')}}" alt=""></button>
           </div>
           <!-- <p id="error-flazz" class="error-message"></p> -->
           <h5>File format should be in PDF, JPG, JPEG or PNG</h5>
@@ -88,7 +88,14 @@
       </form>
     </div>
   </div>
-
+  <script>
+    function triggerFileInput(){
+        document.getElementById('cv').click();
+    }
+    function triggerFileInput2(){
+        document.getElementById('IDCard').click();
+    }
+    </script>
   <script src="{{ asset('js/registscript.js') }}></script>
 </body>
 </html>

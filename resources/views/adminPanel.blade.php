@@ -97,10 +97,18 @@
               <img src="{{Storage::url('images/ep_edit.svg')}}" alt="">
               <span>Edit Data</span>
             </button>
-            <button id="delete-btn">
-              <img src="{{Storage::url('images/Vector (2).svg')}}" alt="">
-              <span>Delete Team</span>
-            </button>
+
+            @forelse ($list_group as $group)
+                <form action = "/delete-group/" {{ $group->id }} method="post">
+                        @csrf
+                    <button type="submit" id="delete-btn" >
+                    <img src="{{Storage::url('images/Vector (2).svg')}}" alt="">
+                    <span>Delete Team</span>
+                    </button>
+                </form>
+            @empty
+                {{-- <p>No Group Inputed</p> --}}
+            @endforelse
           </span>
         </div>
 

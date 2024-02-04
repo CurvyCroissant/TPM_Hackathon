@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Member;
+use App\Models\Leader;
 use Illuminate\Http\Request;
 
 class RegistrationBinusianController extends Controller

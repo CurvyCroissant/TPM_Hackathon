@@ -38,4 +38,4 @@ Route::post('/create-leader-non-binusian', [RegistrationNonBinusianController::c
 
 // AdminPanelController
 Route::get('/admin-panel', [AdminPanelController::class, 'adminPanel'])->name('admin-panel');
-
+Route::post('/delete-group/{id}', [AdminPanelController::class, 'deleteGroup']);
