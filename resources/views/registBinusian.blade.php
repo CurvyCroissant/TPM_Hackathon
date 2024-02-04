@@ -25,6 +25,7 @@
 
       <form action="{{ route('registration-binusian.store') }}" method="POST" enctype="multipart/form-data">
         @csrf
+        
         <div class="inputform">
           <input type="text" id="fullName" name="fullName" placeholder = "Full Name" required oninput="validateFullName()" value="{{ old('fullName') }}">
           @error('fullName')

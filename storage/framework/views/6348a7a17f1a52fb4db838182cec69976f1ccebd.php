@@ -137,8 +137,10 @@ unset($__errorArgs, $__bag); ?>
           <button type="submit">Submit</button>
         </div>
       </form>
+      
     </div>
   </div>
+
   <script>
     function triggerFileInput(){
         document.getElementById('cv').click();
@@ -147,7 +149,7 @@ unset($__errorArgs, $__bag); ?>
         document.getElementById('flazzCard').click();
     }
     </script>
-  <script src="<?php echo e(asset('js/registscript.js')); ?>></script>
+  <script src="<?php echo e(asset('js/registscript.js')); ?>"></script>
 </body>
 </html>
 <?php /**PATH C:\Users\62813\Downloads\TPM_Hackathon\resources\views/registBinusian.blade.php ENDPATH**/ ?>
