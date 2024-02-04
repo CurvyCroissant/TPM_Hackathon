@@ -18,9 +18,9 @@ class Leader extends Model
         'gitId',
         'birthPlace',
         'birthDate',
-        'cv',
-        'flazzCard',
-        'idCard',
+        'cv_file_path',
+        'flazzCard_file_path',
+        'idCard_file_path',
         // 'group_id'
     ];
 
