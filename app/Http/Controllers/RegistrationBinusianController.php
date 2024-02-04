@@ -21,12 +21,20 @@ class RegistrationBinusianController extends Controller
             'birthPlace' => 'required',
             'birthDate' => 'required',
             'cv' => 'required|mimes:pdf,jpg,jpeg,png|max:3000',
-            'flazzCard' => 'required|mimes:pdf,jpg,jpeg,png|max:3000',
+            'flazzCard' => 'required|mimes:pdf,jpg,jpeg,png|max:3000'
         ]);
 
         Member::create($validatedData);
+        // $path = $request->file('cv_image_input');
 
-        return redirect('/dashboard');
+        // $member = Member::create([
+        //     'cv_image_path'=>$path
+        // ]);
+
+        // $fileName = $member->id . $path->getClientOriginalName();
+        // $cv->$cv_image_path = $path->storeAs ('public', $fileName);
+
+        return redirect('dashboard');
     }
 }
 

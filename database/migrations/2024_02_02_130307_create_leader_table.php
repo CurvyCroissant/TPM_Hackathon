@@ -22,9 +22,9 @@ return new class extends Migration
             $table->string("gitId");
             $table->string("birthPlace");
             $table->string("birthDate");
-            $table->string("cv");
-            $table->string("flazzCard");
-            $table->string("idCard");
+            $table->string("cv_image_path");
+            $table->string("flazzCard_image_path");
+            $table->string("idCard_image_path");
             $table->timestamps();
         });
     }

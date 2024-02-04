@@ -23,7 +23,7 @@
     <div class="content1 right">
       <h1>Group<br>Registration</h1>
 
-      <form action="/post-create-group" method = "POST" enctype="multipart/form-data" >
+      <form action="/create-group" method = "post" enctype="multipart/form-data" >
         @csrf
         <div class="input-form">
           <input type="text" name= "group_name_input" placeholder="Group Name" id="groupName" oninput="validateName()">
