@@ -23,71 +23,75 @@
     </div>
     <div class="regis-bottom">
 
-      <form action="/create-leader-binusian" method="post" enctype="multipart/form-data">
+      <form action="{{ route('registration-binusian.store') }}" method="POST" enctype="multipart/form-data">
         @csrf
         <div class="inputform">
-          <!-- <label for="fullName">Full Name:</label> -->
-          <input type="text" id="fullName" name="fullName_input" placeholder = "Full Name" required oninput="validateFullName()">
-          <p id="error-name" class="error-message"></p>
+          <input type="text" id="fullName" name="fullName" placeholder = "Full Name" required oninput="validateFullName()" value="{{ old('fullName') }}">
+          @error('fullName')
+          <p id="error-name" class="error-message">{{ $message }}</p>
+          @enderror
         </div>
         <div class="inputform">
-          <!-- <label for="email">Email:</label> -->
-          <input type="email" id="email" name="email_input" placeholder="Email" required oninput="validateEmail()">
-          <p id="error-email" class="error-message"></p>
+          <input type="email" id="email" name="email" placeholder="Email" required oninput="validateEmail()" value="{{ old('email') }}">
+          @error('email')
+          <p id="error-name" class="error-message">{{ $message }}</p>
+          @enderror
         </div>
         <div class="inputform">
-          <!-- <label for="phoneNumber">Phone Number:</label> -->
-          <input type="tel" id="phoneNumber" name="phoneNumber_input" placeholder="Whatsapp Number" required oninput="validatePhoneNumber()">
-          <p id="error-phone" class="error-message"></p>
+          <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="Whatsapp Number" required oninput="validatePhoneNumber()" value="{{ old('phoneNumber') }}">
+          @error('phoneNumber')
+          <p id="error-name" class="error-message">{{ $message }}</p>
+          @enderror
         </div>
         <div class="inputform">
-          <!-- <label for="lineId">LINE ID:</label> -->
-          <input type="text" id="lineId" name="lineId_input" placeholder="Line Id" required oninput="validateLineId()">
-          <p id="error-line" class="error-message"></p>
+          <input type="text" id="lineId" name="lineId" placeholder="Line Id" required oninput="validateLineId()" value="{{ old('lineId') }}">
+          @error('lineId')
+          <p id="error-name" class="error-message">{{ $message }}</p>
+          @enderror
         </div>
         <div class="inputform">
-          <!-- <label for="githubId">Github ID:</label> -->
-          <input type="text" id="githubId" name="githubId_input" placeholder="Github/Gitlab Id" required oninput="validateGithubId()">
-          <p id="error-github" class="error-message"></p>
+          <input type="text" id="githubId" name="githubId" placeholder="Github/Gitlab Id" required oninput="validateGithubId()" value="{{ old('githubId') }}">
+          @error('githubId')
+          <p id="error-name" class="error-message">{{ $message }}</p>
+          @enderror
         </div>
         <div class="inputform">
-          <!-- <label for="birthPlace">Birth Place:</label> -->
-          <input type="text" id="birthPlace" name="birthPlace_input" placeholder ="Birth Place" required oninput="validateBirthPlace()">
-          <p id="error-place" class="error-message"></p>
+          <input type="text" id="birthPlace" name="birthPlace" placeholder ="Birth Place" required oninput="validateBirthPlace()" value="{{ old('birthPlace') }}">
+          @error('birthPlace')
+          <p id="error-name" class="error-message">{{ $message }}</p>
+          @enderror
         </div>
         <div class="inputform">
-          <!-- <label for="birthDate">Birth Date:</label> -->
-          <input type="text" id="birthDate" name="birthDate_input" placeholder="Birth Date" onfocus="this.type='date'" required oninput="validateBirthDate()">
-          <p id="error-date" class="error-message"></p>
+          <input type="text" id="birthDate" name="birthDate" placeholder="Birth Date" onfocus="this.type='date'" required oninput="validateBirthDate()" value="{{ old('birthDate') }}">
+          @error('birthDate')
+          <p id="error-name" class="error-message">{{ $message }}</p>
+          @enderror
         </div>
         <div id="fileInputs">
-          <!-- <label for="cv">Upload CV (PDF or Word):</label> -->
           <div class="file-container">
-            <input type="file" id="cv" name="cv_image_input" accept=".pdf, .doc, .docx" hidden oninput="validateCV()">
+            <input type="file" id="cv" name="cv" accept=".pdf, .jpg, .jpeg, .png" hidden oninput="validateCV()" value="{{ old('cv') }}">
             <span id="text-cv">Upload CV</span>
             <button type="button" class="file-btn" onclick="triggerFileInput()" id="btn-cv">Select File <img src="{{Storage::url('images/Upload.svg')}}" alt=""></button>
           </div>
-          <!-- <p id="error-cv" class="error-message"></p> -->
           <h5>File format should be in PDF, JPG, JPEG or PNG</h5>
           <div class="file-container">
-            <input type="file" id="flazzCard" name="flazzCard_image_input" accept=".png, .jpg, .jpeg" hidden oninput="validateFlazzCard()">
+            <input type="file" id="flazzCard" name="flazzCard" accept=".png, .jpg, .jpeg, .pdf" hidden oninput="validateFlazzCard()" value="{{ old('flazzCard') }}">
             <span id="text-flazz">Upload Flazz Card</span>
             <button type="button" class="file-btn" onclick="triggerFileInput2()" id="btn-flazz">Select File <img src="{{Storage::url('images/Upload.svg')}}" alt=""></button>
           </div>
-          <!-- <p id="error-flazz" class="error-message"></p> -->
           <h5>File format should be in PDF, JPG, JPEG or PNG</h5>
 
-          <!-- <label for="flazzCard">Upload Flazz Card (PNG, JPG):</label> -->
         </div>
         <div class="btn-submit">
 
           {{-- #1 SUBMIT BUTTON --}}
           <button type="submit">Submit</button>
-
         </div>
       </form>
+      
     </div>
   </div>
+
   <script>
     function triggerFileInput(){
         document.getElementById('cv').click();
@@ -96,6 +100,6 @@
         document.getElementById('flazzCard').click();
     }
     </script>
-  <script src="{{ asset('js/registscript.js') }}></script>
+  <script src="{{ asset('js/registscript.js') }}"></script>
 </body>
 </html>

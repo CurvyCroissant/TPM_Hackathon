@@ -22,71 +22,131 @@
       <h2>Leader<br>Registration</h2>
     </div>
     <div class="regis-bottom">
-      <form action="" method="post" enctype="multipart/form-data">
+
+      <form action="<?php echo e(route('registration-binusian.store')); ?>" method="POST" enctype="multipart/form-data">
+        <?php echo csrf_field(); ?>
         <div class="inputform">
-          <!-- <label for="fullName">Full Name:</label> -->
-          <input type="text" id="fullName" name="fullName_input" placeholder = "Full Name" required oninput="validateFullName()">
-          <p id="error-name" class="error-message"></p>
+          <input type="text" id="fullName" name="fullName" placeholder = "Full Name" required oninput="validateFullName()" value="<?php echo e(old('fullName')); ?>">
+          <?php $__errorArgs = ['fullName'];
+$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
+if ($__bag->has($__errorArgs[0])) :
+if (isset($message)) { $__messageOriginal = $message; }
+$message = $__bag->first($__errorArgs[0]); ?>
+          <p id="error-name" class="error-message"><?php echo e($message); ?></p>
+          <?php unset($message);
+if (isset($__messageOriginal)) { $message = $__messageOriginal; }
+endif;
+unset($__errorArgs, $__bag); ?>
         </div>
         <div class="inputform">
-          <!-- <label for="email">Email:</label> -->
-          <input type="email" id="email" name="email_input" placeholder="Email" required oninput="validateEmail()">
-          <p id="error-email" class="error-message"></p>
+          <input type="email" id="email" name="email" placeholder="Email" required oninput="validateEmail()" value="<?php echo e(old('email')); ?>">
+          <?php $__errorArgs = ['email'];
+$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
+if ($__bag->has($__errorArgs[0])) :
+if (isset($message)) { $__messageOriginal = $message; }
+$message = $__bag->first($__errorArgs[0]); ?>
+          <p id="error-name" class="error-message"><?php echo e($message); ?></p>
+          <?php unset($message);
+if (isset($__messageOriginal)) { $message = $__messageOriginal; }
+endif;
+unset($__errorArgs, $__bag); ?>
         </div>
         <div class="inputform">
-          <!-- <label for="phoneNumber">Phone Number:</label> -->
-          <input type="tel" id="phoneNumber" name="phoneNumber_input" placeholder="Whatsapp Number" required oninput="validatePhoneNumber()">
-          <p id="error-phone" class="error-message"></p>
+          <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="Whatsapp Number" required oninput="validatePhoneNumber()" value="<?php echo e(old('phoneNumber')); ?>">
+          <?php $__errorArgs = ['phoneNumber'];
+$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
+if ($__bag->has($__errorArgs[0])) :
+if (isset($message)) { $__messageOriginal = $message; }
+$message = $__bag->first($__errorArgs[0]); ?>
+          <p id="error-name" class="error-message"><?php echo e($message); ?></p>
+          <?php unset($message);
+if (isset($__messageOriginal)) { $message = $__messageOriginal; }
+endif;
+unset($__errorArgs, $__bag); ?>
         </div>
         <div class="inputform">
-          <!-- <label for="lineId">LINE ID:</label> -->
-          <input type="text" id="lineId" name="lineId_input" placeholder="Line Id" required oninput="validateLineId()">
-          <p id="error-line" class="error-message"></p>
+          <input type="text" id="lineId" name="lineId" placeholder="Line Id" required oninput="validateLineId()" value="<?php echo e(old('lineId')); ?>">
+          <?php $__errorArgs = ['lineId'];
+$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
+if ($__bag->has($__errorArgs[0])) :
+if (isset($message)) { $__messageOriginal = $message; }
+$message = $__bag->first($__errorArgs[0]); ?>
+          <p id="error-name" class="error-message"><?php echo e($message); ?></p>
+          <?php unset($message);
+if (isset($__messageOriginal)) { $message = $__messageOriginal; }
+endif;
+unset($__errorArgs, $__bag); ?>
         </div>
         <div class="inputform">
-          <!-- <label for="githubId">Github ID:</label> -->
-          <input type="text" id="githubId" name="githubId_input" placeholder="Github/Gitlab Id" required oninput="validateGithubId()">
-          <p id="error-github" class="error-message"></p>
+          <input type="text" id="githubId" name="githubId" placeholder="Github/Gitlab Id" required oninput="validateGithubId()" value="<?php echo e(old('githubId')); ?>">
+          <?php $__errorArgs = ['githubId'];
+$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
+if ($__bag->has($__errorArgs[0])) :
+if (isset($message)) { $__messageOriginal = $message; }
+$message = $__bag->first($__errorArgs[0]); ?>
+          <p id="error-name" class="error-message"><?php echo e($message); ?></p>
+          <?php unset($message);
+if (isset($__messageOriginal)) { $message = $__messageOriginal; }
+endif;
+unset($__errorArgs, $__bag); ?>
         </div>
         <div class="inputform">
-          <!-- <label for="birthPlace">Birth Place:</label> -->
-          <input type="text" id="birthPlace" name="birthPlace_input" placeholder ="Birth Place" required oninput="validateBirthPlace()">
-          <p id="error-place" class="error-message"></p>
+          <input type="text" id="birthPlace" name="birthPlace" placeholder ="Birth Place" required oninput="validateBirthPlace()" value="<?php echo e(old('birthPlace')); ?>">
+          <?php $__errorArgs = ['birthPlace'];
+$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
+if ($__bag->has($__errorArgs[0])) :
+if (isset($message)) { $__messageOriginal = $message; }
+$message = $__bag->first($__errorArgs[0]); ?>
+          <p id="error-name" class="error-message"><?php echo e($message); ?></p>
+          <?php unset($message);
+if (isset($__messageOriginal)) { $message = $__messageOriginal; }
+endif;
+unset($__errorArgs, $__bag); ?>
         </div>
         <div class="inputform">
-          <!-- <label for="birthDate">Birth Date:</label> -->
-          <input type="text" id="birthDate" name="birthDate_input" placeholder="Birth Date" onfocus="this.type='date'" required oninput="validateBirthDate()">
-          <p id="error-date" class="error-message"></p>
+          <input type="text" id="birthDate" name="birthDate" placeholder="Birth Date" onfocus="this.type='date'" required oninput="validateBirthDate()" value="<?php echo e(old('birthDate')); ?>">
+          <?php $__errorArgs = ['birthDate'];
+$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
+if ($__bag->has($__errorArgs[0])) :
+if (isset($message)) { $__messageOriginal = $message; }
+$message = $__bag->first($__errorArgs[0]); ?>
+          <p id="error-name" class="error-message"><?php echo e($message); ?></p>
+          <?php unset($message);
+if (isset($__messageOriginal)) { $message = $__messageOriginal; }
+endif;
+unset($__errorArgs, $__bag); ?>
         </div>
         <div id="fileInputs">
-          <!-- <label for="cv">Upload CV (PDF or Word):</label> -->
           <div class="file-container">
-            <input type="file" id="cv" name="cv" accept=".pdf, .doc, .docx" hidden oninput="validateCV()">
+            <input type="file" id="cv" name="cv" accept=".pdf, .jpg, .jpeg, .png" hidden oninput="validateCV()" value="<?php echo e(old('cv')); ?>">
             <span id="text-cv">Upload CV</span>
-            <button type="button" class="file-btn" id="btn-cv">Select File <img src="<?php echo e(Storage::url('images/Upload.svg')); ?>" alt=""></button>
+            <button type="button" class="file-btn" onclick="triggerFileInput()" id="btn-cv">Select File <img src="<?php echo e(Storage::url('images/Upload.svg')); ?>" alt=""></button>
           </div>
-          <!-- <p id="error-cv" class="error-message"></p> -->
           <h5>File format should be in PDF, JPG, JPEG or PNG</h5>
           <div class="file-container">
-            <input type="file" id="flazzCard" name="flazzCard" accept=".png, .jpg, .jpeg" hidden oninput="validateFlazzCard()">
+            <input type="file" id="flazzCard" name="flazzCard" accept=".png, .jpg, .jpeg, .pdf" hidden oninput="validateFlazzCard()" value="<?php echo e(old('flazzCard')); ?>">
             <span id="text-flazz">Upload Flazz Card</span>
-            <button type="button" class="file-btn" id="btn-flazz">Select File <img src="<?php echo e(Storage::url('images/Upload.svg')); ?>" alt=""></button>
+            <button type="button" class="file-btn" onclick="triggerFileInput2()" id="btn-flazz">Select File <img src="<?php echo e(Storage::url('images/Upload.svg')); ?>" alt=""></button>
           </div>
-          <!-- <p id="error-flazz" class="error-message"></p> -->
           <h5>File format should be in PDF, JPG, JPEG or PNG</h5>
 
-          <!-- <label for="flazzCard">Upload Flazz Card (PNG, JPG):</label> -->
         </div>
         <div class="btn-submit">
 
           
           <button type="submit">Submit</button>
-
         </div>
       </form>
     </div>
   </div>
-
+  <script>
+    function triggerFileInput(){
+        document.getElementById('cv').click();
+    }
+    function triggerFileInput2(){
+        document.getElementById('flazzCard').click();
+    }
+    </script>
   <script src="<?php echo e(asset('js/registscript.js')); ?>></script>
 </body>
 </html>

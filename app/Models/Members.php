@@ -17,6 +17,8 @@ class Members extends Model
         // 'group_id'
     ];
 
+    protected $table = 'members';
+    
     public function group()
     {
         return $this->belongsTo(Group::class, 'group_id', 'id');

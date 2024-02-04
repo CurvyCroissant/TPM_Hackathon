@@ -29,12 +29,12 @@ Route::post('/create-group', [RegistrationController::class, 'store'])->name('re
 
 // RegistrationBinusianController
 Route::get('/registration-binusian', [RegistrationBinusianController::class, 'registrationBinusian'])->name('registration-binusian');
-Route::post('/create-leader-binusian', [RegistrationBinusianController::class, 'store']);
+Route::post('/create-leader-binusian', [RegistrationBinusianController::class, 'store'])->name('registration-binusian.store');
 
 
 // RegistrationNonBinusianController
 Route::get('/registration-non-binusian', [RegistrationNonBinusianController::class, 'registrationNonBinusian'])->name('registration-non-binusian');
-Route::post('/create-leader-non-binusian', [RegistrationNonBinusianController::class, 'store']);
+Route::post('/create-leader-non-binusian', [RegistrationNonBinusianController::class, 'store'])->name('registration-non-binusian.store');
 
 
 // AdminPanelController

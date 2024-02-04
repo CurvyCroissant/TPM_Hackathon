@@ -24,7 +24,8 @@ class Leader extends Model
         // 'group_id'
     ];
 
-
+    protected $table = 'leader';
+    
     public function group()
     {
         return $this->belongsTo(Group::class);
