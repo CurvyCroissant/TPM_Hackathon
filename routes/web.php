@@ -16,6 +16,9 @@ Route::get('/', [HomeController::class, 'home'])->name('home');
 // DashboardController
 Route::get('/dashboard', [DashboardController::class, 'dashboard'])->name('dashboard');
 Route::post('/create-members', [DashboardController::class, 'store'])->name('dashboard.store');
+Route::get('/display-group/{id}', [DashboardController::class, 'display']);
+Route::get('/edit-group/{id}', [DashboardController::class, 'edit']);
+Route::patch('/update-group/{id}', [DashboardController::class, 'update']);
 
 
 // LoginController
@@ -39,3 +42,8 @@ Route::post('/create-leader-non-binusian', [RegistrationNonBinusianController::c
 
 // AdminPanelController
 Route::get('/admin-panel', [AdminPanelController::class, 'adminPanel'])->name('admin-panel');
+Route::post('/create-group', [AdminPanelController::class, 'store']);
+Route::get('/delete-group/{id}', [AdminPanelController::class, 'delete']);
+Route::get('/edit-group/{id}', [AdminPanelController::class, 'edit']);
+Route::patch('/update-group/{id}', [AdminPanelController::class, 'update']);
+Route::get('/display-group/{id}', [AdminPanelController::class, 'display']);
