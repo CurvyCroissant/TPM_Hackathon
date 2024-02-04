@@ -22,8 +22,8 @@
       <h2>Leader<br>Registration</h2>
     </div>
     <div class="regis-bottom">
-        
-        <form action="/post-create-leader-non-binusian" method="POST" enctype="multipart/form-data">
+
+        <form action="/create-leader-non-binusian" method="POST" enctype="multipart/form-data">
             <?php echo csrf_field(); ?>
         <div class="inputform">
           <!-- <label for="fullName">Full Name:</label> -->
