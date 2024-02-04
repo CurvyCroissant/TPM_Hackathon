@@ -66,29 +66,35 @@
           <div class="member-head">
             <h3>Team Members</h3>
           </div>
+
+          <form action="<?php echo e(route('dashboard.store')); ?>" method="POST">
+            <?php echo csrf_field(); ?>
+
           <div class="member-grid">
             <div class="membgrid">
               <label for="">Team Member 1</label>
-              <input type="text" id="member1">
+              <input type="text" id="member1" name="member1">
             </div>
             <div class="membgrid">
               <label for="">Team Member 2</label>
-              <input type="text" id="member2">
+              <input type="text" id="member2" name="member2">
             </div>
             <div class="membgrid">
               <label for="">Team Member 3</label>
-              <input type="text" id="member3">
+              <input type="text" id="member3" name="member3">
             </div>
             <div class="membgrid">
               <label for="">Team Member 4</label>
-              <input type="text" id="member4">
+              <input type="text" id="member4" name="member4">
             </div>
           </div>
         </div>
         <div id="edit-con">
-          <button>Edit Team Members</button>
+          <button type="submit">Edit Team Members</button>
           <h4>Type a strip “-” if there is no member</h4>
         </div>
+      </form>
+
         <div class="file-container">
           <div class="file">
             <h3>View CV</h3>

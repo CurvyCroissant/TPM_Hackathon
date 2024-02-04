@@ -18,4 +18,5 @@ class AdminPanelController extends Controller
 
         return redirect('admin-panel');
     }
+
 }
