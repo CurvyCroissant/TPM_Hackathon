@@ -67,25 +67,25 @@
             <h3>Team Members</h3>
           </div>
 
-          <form action="{{ route('dashboard.store') }}" method="POST">
+          <form action="{{ route('dashboard.store') }}" method="POST" enctype="multipart/form-data">
             @csrf
 
           <div class="member-grid">
             <div class="membgrid">
               <label for="">Team Member 1</label>
-              <input type="text" id="member1" name="member1">
+              <input type="text" id="member1" name="member1" value="{{ old('member1') }}">
             </div>
             <div class="membgrid">
               <label for="">Team Member 2</label>
-              <input type="text" id="member2" name="member2">
+              <input type="text" id="member2" name="member2" value="{{ old('member2') }}">
             </div>
             <div class="membgrid">
               <label for="">Team Member 3</label>
-              <input type="text" id="member3" name="member3">
+              <input type="text" id="member3" name="member3" value="{{ old('member3') }}">
             </div>
             <div class="membgrid">
               <label for="">Team Member 4</label>
-              <input type="text" id="member4" name="member4">
+              <input type="text" id="member4" name="member4" value="{{ old('member4') }}">
             </div>
           </div>
         </div>

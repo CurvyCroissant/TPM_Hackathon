@@ -520,7 +520,8 @@
               <h5>Our virtual conference: 'Transform Your Ideas into Reality,' invites tech enthusiasts to converge, brainstorm, and code their way from mere concepts to real-world digital solutions.</h5>
             </div>
             <div class="event-btn">
-              <button class="Register">Register</button>
+              <a href="<?php echo e(route('registration')); ?>"><button class="Register">Register</button></a>
+
             </div>
           </div>
         </div>
@@ -545,7 +546,7 @@
               <h5> In Hackathon’s developer workshop participants can enhance their coding skills and collaborate on innovative software development techniques in a dynamic, hands-on environment.</h5>
             </div>
             <div class="event-btn">
-              <button class="Register yellow">Register</button>
+              <a href="<?php echo e(route('registration')); ?>"><button class="Register yellow">Register</button></a>
             </div>
           </div>
           <img src="<?php echo e(Storage::url('images/Frame 162629.png')); ?>" alt="">

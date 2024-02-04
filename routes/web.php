@@ -24,7 +24,7 @@ Route::get('/login', [LoginController::class, 'login'])->name('login');
 
 // RegistrationController
 Route::get('/registration', [RegistrationController::class, 'registration'])->name('registration');
-Route::post('/create-group', [RegistrationController::class, 'store']);
+Route::post('/create-group', [RegistrationController::class, 'store'])->name('registration.store');
 
 
 // RegistrationBinusianController

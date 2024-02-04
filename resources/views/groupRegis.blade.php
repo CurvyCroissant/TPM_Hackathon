@@ -23,8 +23,9 @@
     <div class="content1 right">
       <h1>Group<br>Registration</h1>
 
-      <form action="/create-group" method = "post" enctype="multipart/form-data" >
+      <form action="{{ route('registration.store')}}" method = "POST" enctype="multipart/form-data" >
         @csrf
+
         <div class="input-form">
           <input type="text" name= "group_name_input" placeholder="Group Name" id="groupName" oninput="validateName()">
           <p id="error-name" class="error-message"></p>
@@ -47,10 +48,9 @@
             <label for="radio-non">Non-Binusian</label>
           </div>
         </div>
-      </form>
-
       {{-- #1 LOGIN BUTTON --}}
-      <button id="btn-submit">Submit</button>
+      <button type="submit" id="btn-submit">Submit</button>
+    </form>
 
     </div>
   </div>
