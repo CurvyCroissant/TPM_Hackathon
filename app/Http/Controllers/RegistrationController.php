@@ -19,6 +19,6 @@ class RegistrationController extends Controller
 
         Group::create($validatedData);
 
-        return redirect('registration', compact('request'));
+        return view('registUser', compact('request'));
     }
 }
