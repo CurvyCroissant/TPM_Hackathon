@@ -13,7 +13,7 @@ class RegistrationController extends Controller
 
     public function store(Request $request) {
         $validatedData = $request->validate([
-            'groupName' => 'required',
+            'groupName' => 'required|string',
             'password' => 'required|min:5|max:20'
         ]);
 

@@ -23,34 +23,61 @@
     <div class="content1 right">
       <h1>Group<br>Registration</h1>
 
-      <form action="/create-group" method = "post" enctype="multipart/form-data" >
+      <form action="<?php echo e(route('registration.store')); ?>" method = "POST" enctype="multipart/form-data" >
         <?php echo csrf_field(); ?>
+
         <div class="input-form">
-          <input type="text" name= "group_name_input" placeholder="Group Name" id="groupName" oninput="validateName()">
-          <p id="error-name" class="error-message"></p>
+          <input type="text" name= "groupName" placeholder="Group Name" id="groupName" oninput="validateName()" value="<?php echo e(old('groupName')); ?>">
+          <?php $__errorArgs = ['groupName'];
+$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
+if ($__bag->has($__errorArgs[0])) :
+if (isset($message)) { $__messageOriginal = $message; }
+$message = $__bag->first($__errorArgs[0]); ?>
+          <p id="error-name" class="error-message"><?php echo e($message); ?></p>
+          <?php unset($message);
+if (isset($__messageOriginal)) { $message = $__messageOriginal; }
+endif;
+unset($__errorArgs, $__bag); ?>
         </div>
         <div class="input-form">
-          <input type="password" name="password_input" placeholder="Password" id="password" oninput="validatePassword()">
-          <p id="error-pass" class="error-message"></p>
+          <input type="password" name="password" placeholder="Password" id="password" oninput="validatePassword()" value="<?php echo e(old('password')); ?>">
+          <?php $__errorArgs = ['password'];
+$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
+if ($__bag->has($__errorArgs[0])) :
+if (isset($message)) { $__messageOriginal = $message; }
+$message = $__bag->first($__errorArgs[0]); ?>
+          <p id="error-pass" class="error-message"><?php echo e($message); ?></p>
+          <?php unset($message);
+if (isset($__messageOriginal)) { $message = $__messageOriginal; }
+endif;
+unset($__errorArgs, $__bag); ?>
         </div>
         <div class="input-form">
-          <input type="password" placeholder="Confirm Password" id="conPassword" oninput="validateConfirmPassword()">
-          <p id="error-conPass" class="error-message"></p>
+          <input type="password" placeholder="Confirm Password" name="conPassword" id="conPassword" oninput="validateConfirmPassword()" value="<?php echo e(old('conPassword')); ?>">
+          <?php $__errorArgs = ['conPassword'];
+$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
+if ($__bag->has($__errorArgs[0])) :
+if (isset($message)) { $__messageOriginal = $message; }
+$message = $__bag->first($__errorArgs[0]); ?>
+          <p id="error-conPass" class="error-message"><?php echo e($message); ?></p>
+          <?php unset($message);
+if (isset($__messageOriginal)) { $message = $__messageOriginal; }
+endif;
+unset($__errorArgs, $__bag); ?>
         </div>
         <div class="radio">
           <div class="radiobinus">
-            <input type="radio" id="radio-binusian" name="radiobinus">
+            <input type="radio" id="binusian" name="binusian" value="<?php echo e(old('binusian')); ?>">
             <label for="radio-binusian">Binusian</label>
           </div>
           <div class="radiobinus">
-            <input type="radio" id="radio-non" name="radiobinus">
+            <input type="radio" id="nonBinusian" name="nonBinusian" value="<?php echo e(old('nonBinusian')); ?>">
             <label for="radio-non">Non-Binusian</label>
           </div>
         </div>
-      </form>
-
       
-      <button id="btn-submit">Submit</button>
+      <button type="submit" id="btn-submit">Submit</button>
+    </form>
 
     </div>
   </div>

@@ -27,24 +27,30 @@
         @csrf
 
         <div class="input-form">
-          <input type="text" name= "group_name_input" placeholder="Group Name" id="groupName" oninput="validateName()">
-          <p id="error-name" class="error-message"></p>
+          <input type="text" name= "groupName" placeholder="Group Name" id="groupName" oninput="validateName()" value="{{ old('groupName') }}">
+          @error('groupName')
+          <p id="error-name" class="error-message">{{ $message }}</p>
+          @enderror
         </div>
         <div class="input-form">
-          <input type="password" name="password_input" placeholder="Password" id="password" oninput="validatePassword()">
-          <p id="error-pass" class="error-message"></p>
+          <input type="password" name="password" placeholder="Password" id="password" oninput="validatePassword()" value="{{ old('password') }}">
+          @error('password')
+          <p id="error-pass" class="error-message">{{ $message }}</p>
+          @enderror
         </div>
         <div class="input-form">
-          <input type="password" placeholder="Confirm Password" id="conPassword" oninput="validateConfirmPassword()">
-          <p id="error-conPass" class="error-message"></p>
+          <input type="password" placeholder="Confirm Password" name="conPassword" id="conPassword" oninput="validateConfirmPassword()" value="{{ old('conPassword') }}">
+          @error('conPassword')
+          <p id="error-conPass" class="error-message">{{ $message }}</p>
+          @enderror
         </div>
         <div class="radio">
           <div class="radiobinus">
-            <input type="radio" id="radio-binusian" name="radiobinus">
+            <input type="radio" id="binusian" name="binusian" value="{{ old('binusian') }}">
             <label for="radio-binusian">Binusian</label>
           </div>
           <div class="radiobinus">
-            <input type="radio" id="radio-non" name="radiobinus">
+            <input type="radio" id="nonBinusian" name="nonBinusian" value="{{ old('nonBinusian') }}">
             <label for="radio-non">Non-Binusian</label>
           </div>
         </div>
