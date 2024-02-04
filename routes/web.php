@@ -15,6 +15,7 @@ Route::get('/', [HomeController::class, 'home'])->name('home');
 
 // DashboardController
 Route::get('/dashboard', [DashboardController::class, 'dashboard'])->name('dashboard');
+Route::post('/create-members', [DashboardController::class, 'store'])->name('dashboard.store');
 
 
 // LoginController
@@ -38,4 +39,3 @@ Route::post('/create-leader-non-binusian', [RegistrationNonBinusianController::c
 
 // AdminPanelController
 Route::get('/admin-panel', [AdminPanelController::class, 'adminPanel'])->name('admin-panel');
-

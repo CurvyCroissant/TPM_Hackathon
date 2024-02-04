@@ -17,6 +17,10 @@ return new class extends Migration
             $table->id();
             $table->string("groupName");
             $table->string("password");
+            $table->string("member1");
+            $table->string("member2");
+            $table->string("member3");
+            $table->string("member4");
             $table->timestamps();
         });
     }

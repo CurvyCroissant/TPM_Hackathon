@@ -19,7 +19,8 @@ class Leader extends Model
         'birthDate',
         'cv',
         'flazzCard',
-        'idCard'
+        'idCard',
+        'group_id'
     ];
 
 

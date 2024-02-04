@@ -9,4 +9,5 @@ class AdminPanelController extends Controller
     public function adminPanel() {
         return view('adminPanel');
     }
+
 }
