@@ -10,13 +10,17 @@ class RegistrationController extends Controller
     public function registration() {
         return view('groupRegis');
     }
-
-    public function createGroup(Request $request) {
-        Group::create([
-            'groupName' => $request -> group_name_input,
-            'password' => $request -> password_input
+    
+    public function store(Request $request) {
+        $validatedData = $request->validate([
+            'groupName' => 'required',
+            'password' => 'required|min:5|max:20'
         ]);
 
+        $validatedData['password'] = Hash::make($validatedData['password']);
+
+        Group::create($validatedData);
+        
         return redirect('registration');
     }
 }
