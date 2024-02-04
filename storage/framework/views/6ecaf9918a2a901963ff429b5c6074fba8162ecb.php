@@ -23,7 +23,6 @@
           <h2>Leader<br>Registration Binusian</h2>
         </div>
         <div class="regis-bottom">
-
           <form action="/create-leader-binusian" method="post" enctype="multipart/form-data">
             <?php echo csrf_field(); ?>
             <div class="inputform">
@@ -73,7 +72,7 @@
               <div class="file-container">
                 <input type="file" id="flazzCard" name="flazzCard_image_input" accept=".png, .jpg, .jpeg" hidden oninput="validateFlazzCard()">
                 <span id="text-flazz">Upload Flazz Card</span>
-                <button type="button" class="file-btn" onclick="triggerFileInput2()" id="btn-flazz">Select File <img src="<?php echo e(Storage::url('images/Upload.svg')); ?>" alt=""></button>
+                <button type="button" class="file-btn" onclick="triggerFileInput1()" id="btn-flazz">Select File <img src="<?php echo e(Storage::url('images/Upload.svg')); ?>" alt=""></button>
               </div>
               <!-- <p id="error-flazz" class="error-message"></p> -->
               <h5>File format should be in PDF, JPG, JPEG or PNG</h5>
@@ -166,6 +165,9 @@
   <script>
     function triggerFileInput(){
         document.getElementById('cv').click();
+    }
+    function triggerFileInput1(){
+        document.getElementById('flazzCard').click();
     }
     function triggerFileInput2(){
         document.getElementById('IDCard').click();
