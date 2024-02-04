@@ -96,6 +96,6 @@
         document.getElementById('IDCard').click();
     }
     </script>
-  <script src="{{ asset('js/registscript.js') }}></script>
+  <script src="{{ asset('js/registscript.js') }}"></script>
 </body>
 </html>

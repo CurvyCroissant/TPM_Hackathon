@@ -13,12 +13,12 @@ class RegistrationNonBinusianController extends Controller
 
     public function store(Request $request) {
         $validatedData = $request->validate([
-            'fullName' => 'required',
-            'email' => 'required|email:dns|unique:users',
+            'fullName' => 'required|string',
+            'email' => 'required|email:dns|unique:leader',
             'waNumber' => 'required|numeric',
-            'lineId' => 'required',
-            'gitId' => 'required',
-            'birthPlace' => 'required',
+            'lineId' => 'required|string',
+            'gitId' => 'required|string',
+            'birthPlace' => 'required|string',
             'birthDate' => 'required',
             'cv' => 'required|mimes:pdf,jpg,jpeg,png|max:3000',
             'idCard' => 'required|mimes:pdf,jpg,jpeg,png|max:3000',

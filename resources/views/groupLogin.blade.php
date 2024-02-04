@@ -40,6 +40,6 @@
     </div>
   </div>
 
-  <script src="{{ asset('js/groupLogin.js') }} defer></script>
+  <script src="{{ asset('js/groupLogin.js') }}" defer></script>
 </body>
 </html>

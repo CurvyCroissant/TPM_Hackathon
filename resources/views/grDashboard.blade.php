@@ -187,7 +187,8 @@
       </div>
       <div id="privacy">Privacy Policy 61.8 and Terms of Service</div>
     </div>
-
   </div>
+
+  <script src="{{ asset('js/adminPanel.js') }}"></script>
 </body>
 </html>

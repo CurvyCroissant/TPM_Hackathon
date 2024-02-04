@@ -14,22 +14,22 @@ class RegistrationBinusianController extends Controller
     public function store(Request $request) {
         $validatedData = $request->validate([
             'fullName' => 'required|string',
-            'email' => 'required',
+            'email' => 'required|email:dns|unique:leader',
             'waNumber' => 'required|numeric',
             'lineId' => 'required|string',
             'gitId' => 'required|string',
             'birthPlace' => 'required|string',
             'birthDate' => 'required',
-            'cv' => 'mimes:pdf,jpg,jpeg,png|max:3000',
-            'flazzCard' => 'mimes:pdf,jpg,jpeg,png|max:3000'
+            'cv' => 'required|mimes:pdf,jpg,jpeg,png|max:3000',
+            'flazzCard' => 'required|mimes:pdf,jpg,jpeg,png|max:3000'
         ]);
 
 
-        // $cvPath = $request->file('cv')->store('cv_files', 'public');
-        // $validatedData['cv'] = $cvPath;
+        $cvPath = $request->file('cv')->store('cv_files', 'public');
+        $validatedData['cv'] = $cvPath;
 
-        // $flazzCardPath = $request->file('flazzCard')->store('flazz_card_files', 'public');
-        // $validatedData['flazzCard'] = $flazzCardPath;
+        $flazzCardPath = $request->file('flazzCard')->store('flazz_card_files', 'public');
+        $validatedData['flazzCard'] = $flazzCardPath;
 
         Leader::create($validatedData);
 

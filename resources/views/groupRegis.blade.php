@@ -66,6 +66,6 @@
     </div>
   </div>
 
-  <script src="{{ asset('js/groupRegis.js') }} defer></script>
+  <script src="{{ asset('js/groupRegis.js') }}" defer></script>
 </body>
 </html>
