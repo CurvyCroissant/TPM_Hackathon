@@ -14,9 +14,11 @@ class Group extends Model
         'password'
     ];
 
+    protected $table = 'group';
+
     public function leader()
     {
         return $this->hasOne(Leader::class);
     }
-    
+
 }
