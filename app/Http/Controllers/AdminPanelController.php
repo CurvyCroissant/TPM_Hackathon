@@ -13,8 +13,8 @@ class AdminPanelController extends Controller
         ]);
     }
 
-    public function deleteGroup($id1) {
-        Group::findOrFail($id1)->delete();
+    public function deleteGroup($id) {
+        Group::findOrFail($id)->delete();
 
         return redirect('admin-panel');
     }
