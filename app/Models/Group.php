@@ -16,6 +16,8 @@ class Group extends Model
         'members_id'
     ];
 
+    protected $table = 'group';
+
     public function leader()
     {
         return $this->hasOne(Leader::class);
