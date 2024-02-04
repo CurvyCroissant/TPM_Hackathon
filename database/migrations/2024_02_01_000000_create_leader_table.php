@@ -22,7 +22,7 @@ return new class extends Migration
             $table->string("gitId");
             $table->string("birthPlace");
             $table->string("birthDate");
-            $table->string("cv_file_path");
+            $table->string("cv_file_path")->nullable();
             $table->string("flazzCard_file_path")->nullable();
             $table->string("idCard_file_path")->nullable();
             // $table->unsignedBigInteger('group_id');
