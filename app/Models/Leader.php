@@ -9,6 +9,7 @@ class Leader extends Model
 {
     use HasFactory;
 
+
     protected $fillable = [
         'fullName',
         'email',
@@ -20,7 +21,7 @@ class Leader extends Model
         'cv',
         'flazzCard',
         'idCard',
-        'group_id'
+        // 'group_id'
     ];
 
 

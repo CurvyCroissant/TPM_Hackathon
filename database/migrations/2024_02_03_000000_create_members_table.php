@@ -13,17 +13,19 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('group', function (Blueprint $table) {
+        Schema::create('members', function (Blueprint $table) {
             $table->id();
-            $table->string("groupName");
-            $table->string("password");
             $table->string("member1");
             $table->string("member2");
             $table->string("member3");
             $table->string("member4");
+            // $table->unsignedBigInteger('group_id');
             $table->timestamps();
+
+            // $table->foreign('group_id')->references('id')->on('group');
         });
     }
+
     /**
      * Reverse the migrations.
      *
@@ -31,6 +33,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('group');
+        Schema::dropIfExists('members');
     }
 };

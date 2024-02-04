@@ -11,12 +11,19 @@ class Group extends Model
 
     protected $fillable = [
         'groupName',
-        'password'
+        'password',
+        'leader_id',
+        'members_id'
     ];
 
     public function leader()
     {
         return $this->hasOne(Leader::class);
+    }
+
+    public function members()
+    {
+        return $this->hasOne(Members::class);
     }
     
 }

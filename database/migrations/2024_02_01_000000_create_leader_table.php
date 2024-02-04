@@ -25,8 +25,10 @@ return new class extends Migration
             $table->string("cv_image_path");
             $table->string("flazzCard_image_path");
             $table->string("idCard_image_path");
-            $table->foreign('group_id')->references('id')->on('groups');
+            // $table->unsignedBigInteger('group_id');
             $table->timestamps();
+
+            // $table->foreign('group_id')->references('id')->on('group');
         });
     }
 
