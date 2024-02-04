@@ -14,9 +14,9 @@ class Group extends Model
         'password'
     ];
 
-    public function members()
+    public function leader()
     {
-        return $this->hasOne(Member::class);
+        return $this->hasOne(Leader::class);
     }
     
 }

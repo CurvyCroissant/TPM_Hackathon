@@ -24,7 +24,7 @@ class RegistrationBinusianController extends Controller
             'flazzCard' => 'required|mimes:pdf,jpg,jpeg,png|max:3000'
         ]);
 
-        Member::create($validatedData);
+        Leader::create($validatedData);
         // $path = $request->file('cv_image_input');
 
         // $member = Member::create([
