@@ -54,6 +54,11 @@
             <label for="radio-non">Non-Binusian</label>
           </div>
         </div>
+        <div>
+            @if ($errors->any())
+                {{$errors->first()}}
+            @endif
+        </div>
       {{-- #1 LOGIN BUTTON --}}
       <button type="submit" id="btn-submit">Submit</button>
     </form>
